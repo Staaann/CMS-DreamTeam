@@ -7,7 +7,7 @@ background-size: cover;
 height: 100%
 }
 
-.registerplek{
+/*.registerplek{
 text-align: center;
 min-height: 550px;
 background-color: rgba(255,255,255,0.4);
@@ -19,12 +19,19 @@ border-color: grey;
 border-bottom:4px solid grey;
 transform: translate(-0px, -80px);
 text-align: center;
-
-
-
+}*/
+.registerplek{
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+background-color: rgba(255,255,255,0.4);
+border-radius:25px;
+padding:20px 50px;
 }
 
-.loginplekbg{
+/*.loginplekbg{
 
 	padding: 60px;
 	position: absolute;
@@ -35,10 +42,22 @@ text-align: center;
 	text-align: center;
 	background-color: rgba(255,255,255,0.4);
 	border-radius: 10px;
+}*/
+.loginplekbg{
+
+	padding: 60px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 25px;
 }
 
 .Registernaam{
-padding-top: 40px;
+padding-top:20px;
+padding-bottom:5px;
 font-size: 18px;
 color: #333333;
 
@@ -53,6 +72,7 @@ border-radius: 8px;
 /*background: rgba(166, 166, 166, );*/
 background-color: rgba(255, 250, 210, 0.1);
 border: 1px solid black;
+max-width: 80%
 }
 
 .submit{
@@ -101,8 +121,8 @@ input[type=text] {
   height: 15px;
   padding: 10px ;
   margin: 8px 0;
-  border-radius: 8px; 
-  background-color: transparent; 
+  border-radius: 8px;
+  background-color: transparent;
   border: 1px solid black;
 
 }
@@ -132,7 +152,4 @@ input[type=email] {
 
 .mop{
 	margin-top: 30px;
-	
 }
-
-

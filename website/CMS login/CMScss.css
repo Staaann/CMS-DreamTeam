@@ -1,0 +1,138 @@
+html{
+background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: sans-serif;
+background-size: cover;
+height: 100%
+}
+
+.registerplek{
+text-align: center;
+min-height: 550px;
+background-color: rgba(255,255,255,0.4);
+margin-left:37%;
+margin-right:37%;
+margin-top:12%;
+border-radius:25px;
+border-color: grey;
+border-bottom:4px solid grey;
+transform: translate(-0px, -80px);
+text-align: center;
+
+
+
+}
+
+.loginplekbg{
+
+	padding: 60px;
+	position: absolute;
+	margin-left:37%;
+	margin-right:37%;
+	margin-top:12%;
+	transform: translate(-0px, -80px);
+	text-align: center;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 10px;
+}
+
+.Registernaam{
+padding-top: 40px;
+font-size: 18px;
+color: #333333;
+
+}
+
+
+.knoppen{
+width: 270px;
+padding: 10px;
+margin: 15px 0;
+border-radius: 8px;
+/*background: rgba(166, 166, 166, );*/
+background-color: rgba(255, 250, 210, 0.1);
+border: 1px solid black;
+}
+
+.submit{
+border:0;
+height: 30px;
+padding-right:20px;
+padding-left:20px;
+margin-top: 20px;
+font-size: 17px;
+background-color: transparent;
+border-radius: 5px;
+border: 1px solid black;
+/*box-shadow: 0 3px 0 1px rgba(0,0,0,.3);*/
+
+}
+
+.submit:hover {
+	background-color: #ADADAD;
+
+}
+.loginknop:hover {
+	background-color: #ADADAD;
+
+}
+
+.massage{
+margin-top: 20px;
+text-decoration: none;
+
+}
+
+.loginknop{
+
+	width: 110px;
+	margin-top: 30px;
+	margin-bottom: -20px;
+	border-radius: 3px;
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid black;
+
+}
+input[type=text] {
+  width: 280px;
+  height: 15px;
+  padding: 10px ;
+  margin: 8px 0;
+  border-radius: 8px; 
+  background-color: transparent; 
+  border: 1px solid black;
+
+}
+
+
+input[type=password] {
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+input[type=email] {
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+.mop{
+	margin-top: 30px;
+	
+}
+
+

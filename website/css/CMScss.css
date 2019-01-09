@@ -106,7 +106,7 @@ text-decoration: none;
 }
 
 /* input van login en wachtwoord vergeten(j) */
-input[type=text] {
+.jknoppen{
   width: 280px;
   height: 15px;
   padding: 10px ;
@@ -118,7 +118,7 @@ input[type=text] {
 }
 
 /* input van login en wachtwoord vergeten(j) */
-input[type=password] {
+.jknoppen{
   width: 280px;
   height: 15px;
   padding: 10px;
@@ -130,7 +130,7 @@ input[type=password] {
 }
 
 /* input van login en wachtwoord vergeten(j) */
-input[type=email] {
+.jknoppen{
   width: 280px;
   height: 15px;
   padding: 10px;

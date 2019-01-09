@@ -58,6 +58,8 @@ border-radius: 8px;
 background-color: rgba(255, 250, 210, 0.1);
 border: 1px solid black;
 max-width: 80%
+
+
 }
 
  /*acc maken knop (register pagina (s)) */
@@ -106,6 +108,8 @@ text-decoration: none;
 
 }
 
+<<<<<<< HEAD
+=======
 /* input van login en wachtwoord vergeten(j) */
 .jformulier{
   width: 280px;
@@ -141,7 +145,8 @@ text-decoration: none;
   border: 1.5px solid black;
 
 }
+>>>>>>> 615d70f6c85126e8fe8c04aea5541fe3534e5e07
 
 .mop{
-	margin-top: 30px;
+	margin-top: 20px;
 }

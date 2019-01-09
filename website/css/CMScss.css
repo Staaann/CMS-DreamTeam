@@ -107,6 +107,44 @@ text-decoration: none;
 
 }
 
+<<<<<<< HEAD
+=======
+/* input van login en wachtwoord vergeten(j) */
+.jformulier{
+  width: 280px;
+  height: 15px;
+  padding: 10px ;
+  margin: 8px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+/* input van login en wachtwoord vergeten(j) */
+.jformulier{
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+/* input van login en wachtwoord vergeten(j) */
+.jformulier{
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1.5px solid black;
+
+}
+>>>>>>> 615d70f6c85126e8fe8c04aea5541fe3534e5e07
 
 .mop{
 	margin-top: 20px;

@@ -6,7 +6,7 @@
 				                    '',
 				                    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 				    echo "Hello world!";
-				   or die(json_encode(array('outcome' => true)));
+				   	die(json_encode(array('outcome' => true)));
 
 				}
 						catch(PDOException $ex){

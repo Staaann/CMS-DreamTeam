@@ -1,0 +1,24 @@
+* {
+	margin: 0px;
+	padding: 0px
+}
+body {
+	background-color: #DCDCDC;
+	font-size: 14px;
+	font-color: #000000;	
+}
+#wrapper {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+}
+#header {
+		background-color: #cccccc;
+		height:80px;
+		width: 100%;
+		margin-bottom: 10px;
+}
+#content {
+		background-color:#ffffff;
+
+}

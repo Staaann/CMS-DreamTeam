@@ -57,6 +57,8 @@ border-radius: 8px;
 background-color: rgba(255, 250, 210, 0.1);
 border: 1px solid black;
 max-width: 80%
+
+
 }
 
  /*acc maken knop (register pagina (s)) */
@@ -105,42 +107,7 @@ text-decoration: none;
 
 }
 
-/* input van login en wachtwoord vergeten(j) */
-input[type=text] {
-  width: 280px;
-  height: 15px;
-  padding: 10px ;
-  margin: 8px 0;
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1px solid black;
-
-}
-
-/* input van login en wachtwoord vergeten(j) */
-input[type=password] {
-  width: 280px;
-  height: 15px;
-  padding: 10px;
-  margin: 16px 0;
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1px solid black;
-
-}
-
-/* input van login en wachtwoord vergeten(j) */
-input[type=email] {
-  width: 280px;
-  height: 15px;
-  padding: 10px;
-  margin: 16px 0;
-  border-radius: 8px;
-  background-color: transparent;
-  border: 1.5px solid black;
-
-}
 
 .mop{
-	margin-top: 30px;
+	margin-top: 20px;
 }

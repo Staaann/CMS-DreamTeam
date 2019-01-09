@@ -37,6 +37,7 @@ padding:20px 50px;
 /*login text (j)*/
 .h1{
 	font-family: sans-serif;
+	color:  #ADADAD;
 }
 
 /* naam boven de registratie formulier(s)*/
@@ -105,8 +106,6 @@ text-decoration: none;
 
 }
 
-<<<<<<< HEAD
-=======
 /* input van login en wachtwoord vergeten(j) */
 .jformulier{
   width: 280px;
@@ -142,7 +141,6 @@ text-decoration: none;
   border: 1.5px solid black;
 
 }
->>>>>>> 615d70f6c85126e8fe8c04aea5541fe3534e5e07
 
 .mop{
 	margin-top: 20px;

@@ -1,3 +1,5 @@
+
+/* code van alle pagina's bij elkaar (j)(s)*/
 html{
 background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
 background-size: 100%;
@@ -7,19 +9,7 @@ background-size: cover;
 height: 100%
 }
 
-/*.registerplek{
-text-align: center;
-min-height: 550px;
-background-color: rgba(255,255,255,0.4);
-margin-left:37%;
-margin-right:37%;
-margin-top:12%;
-border-radius:25px;
-border-color: grey;
-border-bottom:4px solid grey;
-transform: translate(-0px, -80px);
-text-align: center;
-}*/
+/* register code grijze vlakte ()*/
 .registerplek{
 position: absolute;
 top: 45%;
@@ -31,18 +21,7 @@ border-radius:25px;
 padding:20px 50px;
 }
 
-/*.loginplekbg{
-
-	padding: 60px;
-	position: absolute;
-	margin-left:37%;
-	margin-right:37%;
-	margin-top:12%;
-	transform: translate(-0px, -80px);
-	text-align: center;
-	background-color: rgba(255,255,255,0.4);
-	border-radius: 10px;
-}*/
+/* login en wachtwoord vergeten code grijze vlakte (j)*/
 .loginplekbg{
 
 	padding: 60px;
@@ -55,6 +34,12 @@ padding:20px 50px;
 	border-radius: 25px;
 }
 
+/*login text (j)*/
+.h1{
+	font-family: sans-serif;
+} 
+
+/* naam boven de registratie formulier(s)*/
 .Registernaam{
 padding-top:20px;
 padding-bottom:5px;
@@ -63,18 +48,18 @@ color: #333333;
 
 }
 
-
+/* registratie formulier (s)*/
 .knoppen{
 width: 270px;
 padding: 10px;
 margin: 15px 0;
 border-radius: 8px;
-/*background: rgba(166, 166, 166, );*/
-background-color: rgba(255, 250, 210, 0.1);
+background-color: transparent;
 border: 1px solid black;
 max-width: 80%
 }
 
+ /*acc maken knop (register pagina (s)) */
 .submit{
 border:0;
 height: 30px;
@@ -85,14 +70,16 @@ font-size: 17px;
 background-color: transparent;
 border-radius: 5px;
 border: 1px solid black;
-/*box-shadow: 0 3px 0 1px rgba(0,0,0,.3);*/
 
 }
 
+/* knoppen hover van de registratie pagina (s)*/
 .submit:hover {
 	background-color: #ADADAD;
 
 }
+
+/* knoppen hover van login en wachtwoord vergeten pagina (j)*/
 .loginknop:hover {
 	background-color: #ADADAD;
 
@@ -104,6 +91,7 @@ text-decoration: none;
 
 }
 
+/* knoppen van de login  en wacht woord vergeten(j)*/
 .loginknop{
 
 	width: 110px;
@@ -116,6 +104,8 @@ text-decoration: none;
 	border: 1px solid black;
 
 }
+
+/* input van login en wachtwoord vergeten(j) */
 input[type=text] {
   width: 280px;
   height: 15px;
@@ -123,11 +113,11 @@ input[type=text] {
   margin: 8px 0;
   border-radius: 8px;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1.5px solid black;
 
 }
 
-
+/* input van login en wachtwoord vergeten(j) */
 input[type=password] {
   width: 280px;
   height: 15px;
@@ -135,10 +125,11 @@ input[type=password] {
   margin: 16px 0;
   border-radius: 8px;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1.5px solid black;
 
 }
 
+/* input van login en wachtwoord vergeten(j) */
 input[type=email] {
   width: 280px;
   height: 15px;
@@ -146,10 +137,10 @@ input[type=email] {
   margin: 16px 0;
   border-radius: 8px;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1.5px solid black;
 
 }
-
+ 
 .mop{
 	margin-top: 30px;
 }

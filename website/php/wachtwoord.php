@@ -1,3 +1,9 @@
+<?php
+ require('connect.php');
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +21,7 @@
   			<input class="formulieremail" type="email" placeholder="email" name="email" required>
   				<br />
  			<input class="loginknop " type="submit"  value ="send">
- 			<input class="loginknop" type="button" onclick="location.href='./index.html';" value="login" />
+ 			<input class="loginknop" type="button" onclick="location.href='./index.php';" value="login" />
 
 		</form>
 

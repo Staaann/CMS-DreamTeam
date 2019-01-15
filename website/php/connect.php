@@ -1,27 +1,26 @@
 <?php
 
-			try{
-				    $dbh = new pdo( 'mysql:host=localhost;dbname=cms v2.1',
-				                    'root',
-				                    '',
-				                    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-				    echo "Hello world!";
-				   	die(json_encode(array('outcome' => true)));
+			$servername = "127.0.0.1";
+			$username = "";
+			$password = "root";
+	
+				try {
+				    $conn = new PDO("mysql:host=$servername;dbname=cms2", $username, $password);
+				    // set the PDO error mode to exception
+				    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				    echo "Connected successfully"; 
+				    }
+				catch(PDOException $e)
+				    {
+				    echo "Connection failed: " . $e->getMessage();
+				    }
+	    
+	    	echo "<br />\n";
+	    	echo "<br />\n";
 
-				}
-						catch(PDOException $ex){
-						    die(json_encode(array('outcome' => false, 'message' => 'Unable to connect')));
-						    echo "test";
-				}
+		    echo "Hello world!" ; 
+		    				
+		    echo "<br />\n";
 
-
-					echo "Hello world!";
-
-			/*  $db = new PDO('mysql:host=localhost;dbname=cms v2.1;charset=utf8mb4', 'root', '');
-
-					 if ($con) {
-					  echo 'connected';
-					} else {
-					  echo 'not connected';
-					} */
+			echo "Hello world!";
 ?>

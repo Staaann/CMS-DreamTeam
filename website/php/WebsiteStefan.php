@@ -1,3 +1,7 @@
+<?php
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +25,7 @@
 
 <div>
       <p>
-        <a href="../php/index.html" class="logout logoutHov"> 
+        <a href="logout.php" class="logout logoutHov">
            Log out
         </a>
       </p>

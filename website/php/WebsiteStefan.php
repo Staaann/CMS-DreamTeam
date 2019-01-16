@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> add5ccf1fd3ac800e9aeb71cbbd80c99190754c5
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +13,11 @@
 
  <div class="header">
   <h1>DreamTeam</h1>
+  <?php
+  $username ="Gebruiker";
+  echo "Welcome user $username.";
+
+   ?>
 </div>
 
 <ul>

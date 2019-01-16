@@ -1,13 +1,9 @@
-<?php
-
- ?>
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>HomePage</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
   <body>
 

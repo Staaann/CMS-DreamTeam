@@ -19,7 +19,7 @@
 		<form>
 
   			<input class="formulieremail" type="email" placeholder="email" name="email" required>
-  				<br />
+  				<br >
  			<input class="loginknop " type="submit"  value ="send">
  			<input class="loginknop" type="button" onclick="location.href='./index.php';" value="login" />
 

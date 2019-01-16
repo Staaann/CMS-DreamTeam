@@ -1,3 +1,9 @@
+<?php
+ require('connect.php');
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -9,15 +15,13 @@
 <body>
 	<div class="loginplekbg">
 		<h1 class="h1">wachtwoord vergeten</h1>
-
 	<div>
 		<form>
 
-  			<input class="knoppen" type="email" placeholder="email" name="email" required>
+  			<input class="formulieremail" type="email" placeholder="email" name="email" required>
   				<br />
-
  			<input class="loginknop " type="submit"  value ="send">
- 			<input class="loginknop" type="button" onclick="location.href='./index.html';" value="login" />
+ 			<input class="loginknop" type="button" onclick="location.href='./index.php';" value="login" />
 
 		</form>
 
@@ -25,7 +29,10 @@
 	</div>
 </div>
 
+<?php 
 
+
+?>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php
+	<?php
  require('connect.php');
 
 $sql =  "INSERT INTO users (id, username, password, email)";

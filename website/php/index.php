@@ -1,9 +1,10 @@
-	<?php
+<?php
+
  require('connect.php');
 
-$sql =  "INSERT INTO users (id, username, password, email)";
-
-
+$stmt = $conn->query("SELECT * FROM users");
+$user = $stmt->fetch();
+var_dump($user);
 ?>
 
 

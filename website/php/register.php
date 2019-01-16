@@ -3,7 +3,7 @@
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
-            //var_dump($_POST);
+            var_dump($_POST);
 
           $username = $_POST['username'];
           $password = $_POST['password'];
@@ -11,14 +11,14 @@
           $email = $_POST['email'];  
 
           if ($password != $password_repeat) {
-            echo "password doesnt match";
+            echo "Password doesnt match";
             
           }else{
 
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
           $hashed = hash('sha512', $salted);        
          
-          
+          var_dump($hashed);
 
       require('connect.php');
        

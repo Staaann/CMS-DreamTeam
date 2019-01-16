@@ -1,29 +1,16 @@
 <?php
-          
+    
 
+          if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
-          if (isset($_POST['username'])) {
+            var_dump($_POST);
+
           $username = $_POST['username'];
-          }
- 
-          if (isset($_POST['password'])) {
           $password = $_POST['password'];
-          }
-
-          if (isset($_POST['password1'])) {
-          $password1 = $_POST['Repeat Password'];
-          }
-
+          $password_repeat = $_POST['password_repeat'];
+          $email = $_POST['email'];          
+         
           
-
-          if (isset($_POST['email'])) {
-          $email = $_POST['email'];
-          } 
-
-          if ($password != $password1) {
-           $error= 'Your Password do not match';
-          } 
-
 
       require('connect.php');
        
@@ -34,7 +21,12 @@
       $query->bindParam(':username', $username, PDO::PARAM_STR);
       $query->bindParam(':password', $password, PDO::PARAM_STR);
       $query->bindParam(':email', $email, PDO::PARAM_STR);
-      $query->execute();
+      $query->execute();        
+ }else{
+  echo "geen data";
+ }
+
+ 
 ?>
 
 
@@ -51,14 +43,14 @@
           <h1>Register</h1>
            </div>
             <div>
-              <form class="mop" action="register.php" method="post">
+              <form class="formulier" action="register.php" method="post">
                 <input class="knoppen" type="text" name="username"  placeholder="Username" required >
                 <br>
                  <input class="knoppen" type="email" name="email"  placeholder="Email" required>
                 <br>
                  <input class="knoppen" type="password" name="password"  placeholder="Password"  required>
                 <br>
-                 <input class="knoppen" type="password" name="password1"  placeholder="Repeat Password"  required>
+                 <input class="knoppen" type="password" name="password_repeat"  placeholder="Repeat Password"  required>
                 <br>
                  <button  class="submit" type="submit" name="button" >Sign up</button>
                <br>

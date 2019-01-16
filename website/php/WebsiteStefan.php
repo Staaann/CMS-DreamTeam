@@ -1,6 +1,3 @@
-<?php
-
- ?>
 
 <!DOCTYPE html>
 <html>
@@ -13,6 +10,11 @@
 
  <div class="header">
   <h1>DreamTeam</h1>
+  <?php
+  $username ="Gebruiker";
+  echo "Welcome user $username.";
+
+   ?>
 </div>
 
 <ul>

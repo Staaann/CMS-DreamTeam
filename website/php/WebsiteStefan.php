@@ -11,7 +11,7 @@
   <h1>DreamTeam</h1>
   <?php
   $username ="Gebruiker";
-  echo "Welcome user $username.";
+  echo "Welcome $username.";
 
    ?>
 </div>

@@ -1,5 +1,5 @@
 html {
-  background-image: url("welkom.jpg");
+  background-image: url("../images/welkom.jpg");
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ a {
 }
 /*Layout button */
 .logout {
- background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png') no-repeat 5px 5px #484B4F;
+ background: #484B4F;
   width: 100px;
   cursor:pointer;
   border-radius:50px;
@@ -47,7 +47,7 @@ a {
 }
 
 .header {
-  background-image: url("welkom2.jpg");
+  background-image: url("../images/welkom2.jpg");
   background-size: cover;
   background-position: center -150px center;
   font-family: 'Century Gothic',sans-serif;

@@ -8,9 +8,17 @@
           $username = $_POST['username'];
           $password = $_POST['password'];
           $password_repeat = $_POST['password_repeat'];
-          $email = $_POST['email'];          
+          $email = $_POST['email'];  
+
+          if ($password != $password_repeat) {
+            echo "Password doesnt match";
+            
+          }else{
+
+          $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+          $hashed = hash('sha512', $salted);        
          
-          
+          var_dump($hashed);
 
       require('connect.php');
        
@@ -19,9 +27,10 @@
       $query = $conn->prepare($sql);
 
       $query->bindParam(':username', $username, PDO::PARAM_STR);
-      $query->bindParam(':password', $password, PDO::PARAM_STR);
+      $query->bindParam(':password', $hashed, PDO::PARAM_STR);
       $query->bindParam(':email', $email, PDO::PARAM_STR);
-      $query->execute();        
+      $query->execute();  
+  }
  }else{
   echo "geen data";
  }

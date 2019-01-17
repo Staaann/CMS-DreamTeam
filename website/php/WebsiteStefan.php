@@ -21,8 +21,10 @@ if (!$_SESSION['username']) {
  <div class="header">
   <h1>DreamTeam</h1>
 </div>
+<br>
 <?php
-echo $_SESSION['username'] ?>
+echo "Welcome ";
+echo  $_SESSION['username'];?>
 
 <ul>
   <li><a href="default.asp">Home</a></li>

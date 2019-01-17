@@ -28,6 +28,10 @@
 				}
 				}
 
+				            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;
+
 			       // $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
                    // $hashed = hash('sha512', $salted); 
                    // echo $hashed;

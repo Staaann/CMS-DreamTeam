@@ -7,18 +7,18 @@
 <body>
 
 	
-	<div class="loginplekbg">
+	<div class="grijzevlakte">
 
 		<h1 class="h1">Make a new password</h1>
 
 		<form>
 
-		<input class="formulierwachtwoord" type="password" name="password" placeholder="new password" required>
+		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="new password" required>
 		<br>
-		<input class="formulierwachtwoord" type="password" name="password" placeholder="repeat password"
+		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="repeat password"
 		 required>
 		<br>
-		<input class="loginknop " type="submit"  value ="confirm">
+		<input class="confirmknop " type="submit"  value ="confirm">
 		
 		</form>
 

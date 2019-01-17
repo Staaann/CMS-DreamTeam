@@ -11,7 +11,7 @@
                     $hashed = hash('sha512', $salted); 
 				          		
 				if(empty($username) || empty($password)) {
-				    $messeg = "Username/Password con't be empty";
+				    $messeg = "Username/Password can't be empty";
 				    echo $messeg;
 				} else {
 				    $sql = "SELECT username, password FROM users WHERE username=? AND password=? ";
@@ -28,9 +28,8 @@
 				}
 				}
 
-				            $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;
+				            // $_SESSION["loggedin"] = true;
+                           // $_SESSION["username"] = $username;
 
 			       // $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
                    // $hashed = hash('sha512', $salted); 

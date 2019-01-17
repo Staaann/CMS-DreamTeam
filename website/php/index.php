@@ -1,31 +1,36 @@
 <?php
+	
+ 	require('connect.php');
 
- require('connect.php');
-
-				if (isset( $_POST['username'] , $_POST['password'] )){
+				if (isset( $_POST['username'] , $_POST['password'] ))					
+				{
 				    $username = $_POST['username'];
 				    $password = $_POST['password'];
+				    $_SESSION["username"]= $username;
+                    echo $_SESSION["username"];
 
 				    //password hashing
 				    $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
                     $hashed = hash('sha512', $salted); 
 				          		
-				if(empty($username) || empty($password)) {
-				    $messeg = "Username/Password can't be empty";
-				    echo $messeg;
-				} else {
-				    $sql = "SELECT username, password FROM users WHERE username=? AND password=? ";
-				    $query = $conn->prepare($sql);
-				    $query->execute(array($username,$hashed));
+					if(empty($username) || empty($password)) 
+					{
+					    $messeg = "Username/Password can't be empty";
+					    echo $messeg;
+					} else {
+							    $sql = "SELECT username, password FROM users WHERE username=? AND password=? ";
+							    $query = $conn->prepare($sql);
+							    $query->execute(array($username,$hashed));
 
-				    if($query->rowCount() >= 1) {
+							if($query->rowCount() >= 1)
+							{ 
+							  header("location: WebsiteStefan.php");
+							} else {
+							        $messeg = "Username/Password is wrong";
+							        echo $messeg;
+							       }
+						   }
 
-				        header("location: WebsiteStefan.php");
-				    } else {
-				        $messeg = "Username/Password is wrong";
-				        echo $messeg;
-				    }
-				}
 				}
 
 				            // $_SESSION["loggedin"] = true;

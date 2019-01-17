@@ -1,5 +1,5 @@
-<?php
-    
+<?p  cd grb ag56h 7mwi,o8.9p;5'=hp
+    session_start();
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 

@@ -1,3 +1,14 @@
+
+<?php
+require('connect.php');
+
+// make sure user is logged in
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    include("index.php");
+    exit();
+}
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,13 +20,9 @@
 
  <div class="header">
   <h1>DreamTeam</h1>
-  <?php
-session_start();
-$_SESSION["username"]=$username;
-echo $_SESSION["username"];
-
-   ?>
 </div>
+<?php
+echo $_SESSION['username'] ?>
 
 <ul>
   <li><a href="default.asp">Home</a></li>

@@ -5,11 +5,12 @@
 				if (isset( $_POST['username'] , $_POST['password'] )){
 				    $username = $_POST['username'];
 				    $password = $_POST['password'];
+            $_SESSION['username'] = $username;
 
 				    //password hashing
 				    $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
-                    $hashed = hash('sha512', $salted); 
-				          		
+                    $hashed = hash('sha512', $salted);
+
 				if(empty($username) || empty($password)) {
 				    $messeg = "Username/Password can't be empty";
 				    echo $messeg;
@@ -21,6 +22,7 @@
 				    if($query->rowCount() >= 1) {
 
 				        header("location: WebsiteStefan.php");
+              
 				    } else {
 				        $messeg = "Username/Password is wrong";
 				        echo $messeg;
@@ -32,19 +34,19 @@
                            // $_SESSION["username"] = $username;
 
 			       // $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
-                   // $hashed = hash('sha512', $salted); 
+                   // $hashed = hash('sha512', $salted);
                    // echo $hashed;
 
 				//check of gebruik bestaat
 				//als de gebruiker bestaat anders geef error maak account aan
-				//password hashen die is ingevuld 
-				//passwords vergelijken				
+				//password hashen die is ingevuld
+				//passwords vergelijken
 				//als password niet match melding probeer password opnieuw
 
 
-			
 
-				
+
+
 
 ?>
 
@@ -67,7 +69,7 @@
  	<div class="loginplekbg">
  				<h1 class="h1">login</h1>
 
- 
+
  						<form action="index.php" method="post">
   								<input class="formulierusername" type="text" placeholder="username" name="username"  >
   								<br>

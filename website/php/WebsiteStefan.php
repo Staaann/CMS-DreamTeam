@@ -3,6 +3,7 @@
 require('connect.php');
 
 // make sure user is logged in needed every page!
+
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
     include("index.php");
@@ -20,16 +21,8 @@ if (!$_SESSION['username']) {
 
  <div class="header">
   <h1>DreamTeam</h1>
-<<<<<<< HEAD
-                    <?php
-                    
-                  session_start();
-                  $_SESSION['username']= $username;
-                  echo $_SESSION['username'];
 
-                     ?>
-=======
->>>>>>> 85a23663bcc426ffba5fe7675d63f7b5e0c181cb
+
 </div>
 <br>
 <?php

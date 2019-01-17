@@ -6,7 +6,7 @@
 				{
 				    $username = $_POST['username'];
 				    $password = $_POST['password'];
-<<<<<<< HEAD
+
 				    $_SESSION["username"]= $username;
                     echo $_SESSION["username"];
 
@@ -32,7 +32,7 @@
 							       }
 						   }
 
-=======
+
             $_SESSION['username'] = $username;
 
 				    //password hashing
@@ -56,7 +56,7 @@
 				        echo $messeg;
 				    }
 				}
->>>>>>> 85a23663bcc426ffba5fe7675d63f7b5e0c181cb
+
 				}
 
 				            // $_SESSION["loggedin"] = true;
@@ -71,11 +71,6 @@
 				//password hashen die is ingevuld
 				//passwords vergelijken
 				//als password niet match melding probeer password opnieuw
-
-
-
-
-
 
 ?>
 

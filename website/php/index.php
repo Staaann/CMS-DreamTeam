@@ -44,7 +44,7 @@ var_dump($user);
 
 				<a class="massage" href="register.php">Register</a>
 				<br>
-				<a class="massage" href="wachtwoord.php">forgot password?</a>
+				<a class="massage" href="ww-request.php">forgot password?</a>
 		</div>
 
 

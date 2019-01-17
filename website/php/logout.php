@@ -8,7 +8,8 @@ $_SESSION = array();
 if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time()-42000, '/');
     $loginMessage = 'You have been logged out.';
-        include 'index.php';
+      //  include 'index.php';
+        header("location: index.php");
 }
 // Finally, destroy the session.
 session_destroy();

@@ -22,11 +22,11 @@ html {
 
 }
 
-/*Streep onder text weg*/
+
 a {
     text-decoration: none !important;
 }
-/*Layout button */
+
 .logout {
  background: #484B4F;
   width: 100px;

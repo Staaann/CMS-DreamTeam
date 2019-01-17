@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>new password</title>
-	<link rel="stylesheet" type="text/css" href="./css/cssnieuweww.css">
+	<link rel="stylesheet" type="text/css" href="cssnieuweww.css">
 </head>
 <body>
 

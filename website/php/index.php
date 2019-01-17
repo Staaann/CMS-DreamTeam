@@ -2,9 +2,50 @@
 
  require('connect.php');
 
-$stmt = $conn->query("SELECT * FROM users");
-$user = $stmt->fetch();
-var_dump($user);
+				if (isset( $_POST['username'] , $_POST['password'] )){
+				    $username = $_POST['username'];
+				    $password = $_POST['password'];
+
+				    //password hashing
+				    $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+                    $hashed = hash('sha512', $salted); 
+				          		
+				if(empty($username) || empty($password)) {
+				    $messeg = "Username/Password can't be empty";
+				    echo $messeg;
+				} else {
+				    $sql = "SELECT username, password FROM users WHERE username=? AND password=? ";
+				    $query = $conn->prepare($sql);
+				    $query->execute(array($username,$hashed));
+
+				    if($query->rowCount() >= 1) {
+
+				        header("location: WebsiteStefan.php");
+				    } else {
+				        $messeg = "Username/Password is wrong";
+				        echo $messeg;
+				    }
+				}
+				}
+
+				            // $_SESSION["loggedin"] = true;
+                           // $_SESSION["username"] = $username;
+
+			       // $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+                   // $hashed = hash('sha512', $salted); 
+                   // echo $hashed;
+
+				//check of gebruik bestaat
+				//als de gebruiker bestaat anders geef error maak account aan
+				//password hashen die is ingevuld 
+				//passwords vergelijken				
+				//als password niet match melding probeer password opnieuw
+
+
+			
+
+				
+
 ?>
 
 
@@ -26,17 +67,14 @@ var_dump($user);
  	<div class="loginplekbg">
  				<h1 class="h1">login</h1>
 
- 						<!--login formulier-->
- 						<form action="/action_page.php">
-
-  								<input class="formulierusername" type="text" placeholder="username" name="username" required >
+ 
+ 						<form action="index.php" method="post">
+  								<input class="formulierusername" type="text" placeholder="username" name="username"  >
   								<br>
-  								<input class="formulierwachtwoord" type="password" placeholder="password" name="password" required>
+  								<input class="formulierwachtwoord" type="password" placeholder="password" name="password" >
   								<br>
  								<input class="loginknop" type="submit" value ="login">
  								<br><br>
-
-
 						</form>
 						<br>
 						<!--link naar registreren en naar wachtwoord vergeten -->
@@ -44,7 +82,7 @@ var_dump($user);
 
 				<a class="massage" href="register.php">Register</a>
 				<br>
-				<a class="massage" href="ww-request-mail.html">forgot password?</a>
+				<a class="massage" href="wachtwoord.php">forgot password?</a>
 		</div>
 
 

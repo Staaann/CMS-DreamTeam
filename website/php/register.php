@@ -1,5 +1,4 @@
 <?php
-    
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 

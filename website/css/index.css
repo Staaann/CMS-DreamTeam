@@ -1,12 +1,15 @@
 html {
   background-size: cover;
-  background-image: linear-gradient(#494947, #d8d8d6);
+  background-image: linear-gradient(#494947, #E6E6E6);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+}
+.p1{
+  text-decoration-color: red
 }
 .b1{
   width: 100%;
@@ -49,11 +52,10 @@ a {
 }
 
 .header {
-  background-image: url("../images/welkom2.jpg");
+  background-image: url("../images/welkom3.jpg");
   background-size: cover;
-  background-position: center -150px center;
   font-family: 'Century Gothic',sans-serif;
-  padding: 15px;
+  padding: 16px;
   border-radius:22px;
   text-align: center;
   color: white;
@@ -112,8 +114,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #555;
-  color: white;
+  background-color: #BDBDBD;
+  color: black;
 }
 
 .active {
@@ -129,7 +131,7 @@ li a:hover {
   background: #FFF;
   color: black;
   border-radius:22px;
-  font-size: 15px;;
+  font-size: 12px;;
   border: 1px solid #515453;
   width: 550px;
   height: 500px;

@@ -82,7 +82,7 @@
 
 				<a class="massage" href="register.php">Register</a>
 				<br>
-				<a class="massage" href="wachtwoord.php">forgot password?</a>
+				<a class="massage" href="ww-request-mail.php">forgot password?</a>
 		</div>
 
 

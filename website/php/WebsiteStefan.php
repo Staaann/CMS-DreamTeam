@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
@@ -9,12 +9,12 @@
 
  <div class="header">
   <h1>DreamTeam</h1>
-  <?php
-session_start();
-$_SESSION["username"]=$username;
-echo $_SESSION["username"];
+                    <?php
+                  session_start();
+                  $_SESSION["username"]=$username;
+                  echo $_SESSION["username"];
 
-   ?>
+                     ?>
 </div>
 
 <ul>

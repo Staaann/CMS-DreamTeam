@@ -10,8 +10,9 @@
  <div class="header">
   <h1>DreamTeam</h1>
   <?php
-  $username ="Gebruiker";
-  echo "Welcome $username.";
+session_start();
+$_SESSION["username"]=$username;
+echo $_SESSION["username"];
 
    ?>
 </div>

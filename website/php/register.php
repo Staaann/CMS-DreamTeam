@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <?p  cd grb ag56h 7mwi,o8.9p;5'=hp
     session_start();
+=======
+<?php
+
+>>>>>>> 85a23663bcc426ffba5fe7675d63f7b5e0c181cb
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
@@ -8,20 +13,20 @@
           $username = $_POST['username'];
           $password = $_POST['password'];
           $password_repeat = $_POST['password_repeat'];
-          $email = $_POST['email'];  
+          $email = $_POST['email'];
 
           if ($password != $password_repeat) {
             echo "Password doesnt match";
-            
+
           }else{
 
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
-          $hashed = hash('sha512', $salted);        
-         
+          $hashed = hash('sha512', $salted);
+
           var_dump($hashed);
 
       require('connect.php');
-       
+
       $sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
 
       $query = $conn->prepare($sql);
@@ -29,13 +34,14 @@
       $query->bindParam(':username', $username, PDO::PARAM_STR);
       $query->bindParam(':password', $hashed, PDO::PARAM_STR);
       $query->bindParam(':email', $email, PDO::PARAM_STR);
-      $query->execute();  
+      $query->execute();
+       header("location: index.php");  
   }
  }else{
   echo "geen data";
  }
 
- 
+
 ?>
 
 

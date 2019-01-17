@@ -1,7 +1,18 @@
+
+<?php
+require('connect.php');
+
+// make sure user is logged in needed every page!
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    include("index.php");
+    exit();
+}
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
-
+    <meta charset="utf-8">
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
@@ -9,6 +20,7 @@
 
  <div class="header">
   <h1>DreamTeam</h1>
+<<<<<<< HEAD
                     <?php
                     
                   session_start();
@@ -16,7 +28,13 @@
                   echo $_SESSION['username'];
 
                      ?>
+=======
+>>>>>>> 85a23663bcc426ffba5fe7675d63f7b5e0c181cb
 </div>
+<br>
+<?php
+echo "Welcome ";
+echo  $_SESSION['username'];?>
 
 <ul>
   <li><a href="default.asp">Home</a></li>
@@ -24,7 +42,6 @@
   <li><a href="contact.asp">Blog</a></li>
   <li><a href="about.asp">Chat</a></li>
 </ul>
-
 
 <div>
       <p>
@@ -38,12 +55,11 @@
     <div class="content">
 
 
-<div class="middle">Hallo test test
+<div class="middle">CBS: Gebruik en de gebruikers van sociale media in Nederland
 <p>
-  welkom op onze website ......
-  ...........
-  .....
-  ..
+  Het CBS heeft nieuwe cijfers over het gebruik van sociale media in Nederland gepubliceerd. Hieruit blijkt dat ongeveer zeven op de tien Nederlandse internetgebruikers van 12 jaar en ouder in 2012 gebruikmaakten van sociale media. De meest voorkomende vorm is, niet heel verrassend, deelname aan sociale netwerken zoals Facebook of Twitter (56 procent van de internetgebruikers). Daarna volgen instant messaging (35 procent) en het plaatsen van berichten op chatsites (30 procent). Ruim een op de vijf internetters (22 procent) is actief met bloggen en eenzelfde aantal gebruikt professionele sociale netwerken.
+
+Het gebruik van sociale netwerken is gestegen van 53 procent in 2011 naar 57 procent in 2012. Ook het gebruik van professionele netwerken zoals LinkedIn is in deze periode toegenomen, namelijk van 20 procent naar 23 procent.
 </p>
 </div>
 

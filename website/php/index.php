@@ -1,8 +1,9 @@
 <?php
 
- require('connect.php');
+ 	require('connect.php');
 
-				if (isset( $_POST['username'] , $_POST['password'] )){
+				if (isset( $_POST['username'] , $_POST['password'] ))
+				{
 				    $username = $_POST['username'];
 				    $password = $_POST['password'];
             //simon
@@ -29,6 +30,7 @@
 				        echo $messeg;
 				    }
 				}
+
 				}
 
 				            // $_SESSION["loggedin"] = true;
@@ -43,11 +45,6 @@
 				//password hashen die is ingevuld
 				//passwords vergelijken
 				//als password niet match melding probeer password opnieuw
-
-
-
-
-
 
 ?>
 

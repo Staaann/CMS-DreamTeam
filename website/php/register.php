@@ -33,8 +33,6 @@
       //simon
        header("location: index.php");
   }
- }else{
-  echo "geen data";
  }
 
 
@@ -69,6 +67,5 @@
               </form>
             </div>
           </div>
-
         </body>
       </html>

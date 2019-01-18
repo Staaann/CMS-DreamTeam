@@ -10,6 +10,11 @@ if (isset($_POST["reset-reques-submit"])) {
 
 	$expires = date("U") + 1800; 
 
+	$userEmail = $_POST["email"];
+
+	$sql ="DELETE FORM wwReset WHERE wwResetEmail=";
+	$stmt = mysqli_stmt_init()
+
 }else{
 	header("location:index.php")
 }

@@ -1,5 +1,5 @@
 <?php
-	
+	//stan
  	require('connect.php');
 
 				if (isset( $_POST['username'] , $_POST['password'] ))					
@@ -8,7 +8,6 @@
 				    $password = $_POST['password'];
 
 				    $_SESSION["username"]= $username;
-                    echo $_SESSION["username"];
 
 				    //password hashing
 				    $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";

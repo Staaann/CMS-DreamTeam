@@ -1,6 +1,8 @@
 <?php
 //simon
 require('connect.php');
+error_reporting(0);
+ini_set('display_errors', 0);
 // Unset all of the session variables.
 $_SESSION = array();
 // If it's desired to kill the session, also delete the session cookie.
@@ -11,6 +13,6 @@ if (isset($_COOKIE[session_name()])) {
       //  include 'index.php';
         header("location: index.php");
 }
-// Finally, destroy the session.
 session_destroy();
+// Finally, destroy the session.
  ?>

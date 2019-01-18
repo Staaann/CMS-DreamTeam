@@ -7,7 +7,10 @@ if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
     include("index.php");
     exit();
+
 }
+  error_reporting(0);
+ini_set('display_errors', 0)
  ?>
 <!DOCTYPE html>
 <html>
@@ -25,8 +28,9 @@ if (!$_SESSION['username']) {
 <?php
 //simon
 echo "Welcome ";
-echo  $_SESSION['username'];?>
-
+echo  $_SESSION['username'];
+;
+?>
 <ul>
   <li><a href="default.asp">Home</a></li>
   <li><a href="news.asp">Portofolio</a></li>

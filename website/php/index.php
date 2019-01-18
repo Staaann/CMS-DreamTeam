@@ -5,6 +5,7 @@
 				if (isset( $_POST['username'] , $_POST['password'] )){
 				    $username = $_POST['username'];
 				    $password = $_POST['password'];
+            //simon
             $_SESSION['username'] = $username;
 
 				    //password hashing
@@ -22,7 +23,7 @@
 				    if($query->rowCount() >= 1) {
 
 				        header("location: WebsiteStefan.php");
-              
+
 				    } else {
 				        $messeg = "Username/Password is wrong";
 				        echo $messeg;

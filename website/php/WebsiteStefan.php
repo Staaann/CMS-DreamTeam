@@ -2,7 +2,7 @@
 <?php
 require('connect.php');
 
-// make sure user is logged in needed every page!
+// Simon // make sure user is logged in needed every page!
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
     include("index.php");
@@ -23,6 +23,7 @@ if (!$_SESSION['username']) {
 </div>
 <br>
 <?php
+//simon
 echo "Welcome ";
 echo  $_SESSION['username'];?>
 

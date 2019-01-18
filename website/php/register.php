@@ -30,7 +30,8 @@
       $query->bindParam(':password', $hashed, PDO::PARAM_STR);
       $query->bindParam(':email', $email, PDO::PARAM_STR);
       $query->execute();
-       header("location: index.php");  
+      //simon
+       header("location: index.php");
   }
  }else{
   echo "geen data";

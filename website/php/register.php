@@ -10,19 +10,31 @@
           $password_repeat = $_POST['password_repeat'];
           $email = $_POST['email'];
 
-          if ($password != $password_repeat) {
-            echo "Password doesnt match";
 
-          }else{
+     
+
+
+          if ($password != $password_repeat)
+          {
+            echo "Password doesnt match";
+          }
+
+          else{
 
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
           $hashed = hash('sha512', $salted);
 
           var_dump($hashed);
 
+
       require('connect.php');
 
+
       $sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
+
+
+
+
 
       $query = $conn->prepare($sql);
 
@@ -31,7 +43,7 @@
       $query->bindParam(':email', $email, PDO::PARAM_STR);
       $query->execute();
       //simon
-       header("location: index.php");
+       //header("location: index.php");
   }
  }
 

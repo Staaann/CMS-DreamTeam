@@ -3,7 +3,7 @@
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
-            var_dump($_POST);
+           // var_dump($_POST);
 
           $username = $_POST['username'];
           $password = $_POST['password'];
@@ -11,7 +11,7 @@
           $email = $_POST['email'];
 
 
-<<<<<<< HEAD
+
      
 
 
@@ -21,18 +21,18 @@
           }
 
           else{
-=======
+
           if ($password != $password_repeat) {
             echo "Password doesnt match";  
             }
 
               else{
->>>>>>> e5b27f2ae93df350fb56c6e4f0751f835570fff8
+
 
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
           $hashed = hash('sha512', $salted);
 
-          var_dump($hashed);
+          //var_dump($hashed);
 
 
       require('connect.php');
@@ -51,12 +51,10 @@
       $query->bindParam(':email', $email, PDO::PARAM_STR);
       $query->execute();
       //simon
-       //header("location: index.php");
+       header("location: index.php");
   }
- }else{
-  echo "";
  }
-
+}
 
 ?>
 

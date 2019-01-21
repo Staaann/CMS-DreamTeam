@@ -161,6 +161,17 @@ p{
 
 }
 .UserProfileName{
-  position: relative;
-    left: 30px;
+  position: absolute;
+    top: 35px;
+    right: 200px;
+    font-size: 95%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+    margin: 10;
+  padding: 0;
+  width: 9%;
+  border-radius:22px;
+  background-color: #D8D8D8;
+  text-align: center;
+  background: #484B4F;
 }

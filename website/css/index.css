@@ -54,14 +54,18 @@ a {
 .header {
   background-image: url("../images/welkom3.jpg");
   background-size: cover;
-  font-family: 'Century Gothic',sans-serif;
   padding: 16px;
   border-radius:22px;
+
+}
+
+h1.site-title{
   text-align: center;
   color: white;
   text-shadow: 2px 2px black;
-  font-size: 25px;
+  font-size: 47px;
   letter-spacing: 1px;
+  font-family: 'Century Gothic',sans-serif;
 }
 
 .column{
@@ -81,10 +85,10 @@ a {
   margin: auto;
   text-align: center;
 }
-.content h1{
+h1.page-title{
   font-family: 'Century Gothic',sans-serif;
-  color: #FFF;
-  font-size: 350%;
+  color: #000;
+  font-size: 180%;
   text-shadow: 0 0 300px #000;
 }
 .btn-group{
@@ -149,11 +153,11 @@ li a:hover {
   color: #282728;
 }
 p{
-  font-size: 160%;
-  line-height: 100%;
-  text-align: justify;
-  margin: 3%;
-  font-family: sans-serif;
+    font-size: 120%;
+    line-height: 130%;
+    text-align: left;
+    margin: 3%;
+    font-family: sans-serif;
 
 }
 

@@ -22,15 +22,17 @@ if (!$_SESSION['username']) {
   <body>
 
  <div class="header">
-  <h1>DreamTeam</h1>
+
+  <h1 class="site-title">DreamTeam</h1>
+<div class="UserProfileName">
+  <?php
+  //simon
+  echo "Welcome ";
+  echo  $_SESSION['username'];
+  ?>
+  </div>
 </div>
 <br>
-<?php
-//simon
-echo "Welcome ";
-echo  $_SESSION['username'];
-;
-?>
 <ul>
   <li><a href="default.asp">Home</a></li>
   <li><a href="news.asp">Portofolio</a></li>
@@ -50,7 +52,10 @@ echo  $_SESSION['username'];
     <div class="content">
 <!-- Dit moet van de data base komen -->
 
-<div class="middle">CBS: Gebruik en de gebruikers van sociale media in Nederland
+<div class="middle">
+<h1 class="page-title">
+  CBS: Gebruik en de gebruikers van sociale media in Nederland
+</h1>
 <p>
   Het CBS heeft nieuwe cijfers over het gebruik van sociale media in Nederland gepubliceerd. Hieruit blijkt dat ongeveer zeven op de tien Nederlandse internetgebruikers van 12 jaar en ouder in 2012 gebruikmaakten van sociale media. De meest voorkomende vorm is, niet heel verrassend, deelname aan sociale netwerken zoals Facebook of Twitter (56 procent van de internetgebruikers). Daarna volgen instant messaging (35 procent) en het plaatsen van berichten op chatsites (30 procent). Ruim een op de vijf internetters (22 procent) is actief met bloggen en eenzelfde aantal gebruikt professionele sociale netwerken.
 

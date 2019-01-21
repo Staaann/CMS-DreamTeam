@@ -1,4 +1,4 @@
-<?php
+  <?php
 
  	require('connect.php');
  				//pak de data van het formulier

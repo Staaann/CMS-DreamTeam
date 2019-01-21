@@ -11,6 +11,7 @@
           $email = $_POST['email'];
 
 
+<<<<<<< HEAD
      
 
 
@@ -20,6 +21,13 @@
           }
 
           else{
+=======
+          if ($password != $password_repeat) {
+            echo "Password doesnt match";  
+            }
+
+              else{
+>>>>>>> e5b27f2ae93df350fb56c6e4f0751f835570fff8
 
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
           $hashed = hash('sha512', $salted);
@@ -45,6 +53,8 @@
       //simon
        //header("location: index.php");
   }
+ }else{
+  echo "";
  }
 
 
@@ -79,5 +89,6 @@
               </form>
             </div>
           </div>
+
         </body>
       </html>

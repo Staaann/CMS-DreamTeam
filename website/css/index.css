@@ -48,7 +48,7 @@ a {
   position:fixed;
    right:50px;
    top:30px;
- 
+
 }
 
 .header {
@@ -156,4 +156,7 @@ p{
   font-family: sans-serif;
 
 }
-
+.UserProfileName{
+  position: relative;
+    left: 30px;
+}

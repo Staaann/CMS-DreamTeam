@@ -22,15 +22,17 @@ ini_set('display_errors', 0)
   <body>
 
  <div class="header">
-  <h1>DreamTeam</h1>
+
+  <h1 class="center">DreamTeam</h1>
+<div class="UserProfileName">
+  <?php
+  //simon
+  echo "Welcome ";
+  echo  $_SESSION['username'];
+  ?>
+  </div>
 </div>
 <br>
-<?php
-//simon
-echo "Welcome ";
-echo  $_SESSION['username'];
-;
-?>
 <ul>
   <li><a href="default.asp">Home</a></li>
   <li><a href="news.asp">Portofolio</a></li>

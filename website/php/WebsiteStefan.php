@@ -34,7 +34,6 @@ if (!$_SESSION['username']) {
   <li><a href="#contact">Blog</a></li>
   <li><a href="#about">Chat</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a class="log-out" href="#log-out">Log out</a></li>
 
 </form>
 </ul>

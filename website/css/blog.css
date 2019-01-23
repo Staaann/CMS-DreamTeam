@@ -1,12 +1,14 @@
 html
 {
-	background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+
 	background-size: 100%;
 	background-repeat: no-repeat;
 	font-family: Arial, Helvetica, sans-serif;
 	background-size: cover;
 	height: 100%
 }
+<<<<<<< HEAD
+=======
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -28,21 +30,22 @@ header
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 }
+>>>>>>> a138b1f9735906c011336f2866be763e36323062
 
-.container
-{
-	margin: 0px 200px 0px 200px;
+
+
+
+h1{
+	font-family: 'Century Gothic',sans-serif;
+	text-align: left;
+	font-size:30px;
+	padding-left: 20px;
+	color: white;
+
 
 }
-
-
-
-.blog
-{
-	background-color: white;
-	text-align: center;
-
-}
+<<<<<<< HEAD
+=======
 .cato
 {
 <<<<<<< HEAD
@@ -55,26 +58,35 @@ header
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	width: 270px;
+>>>>>>> a138b1f9735906c011336f2866be763e36323062
 
-	
-}.names
+/*zwate vlakte */
+header
 {
-	list-style: none;
-	font-size: 18px;
-	color: inherit;
+
+  background-color: #160202;
+  padding-bottom: 1px;
+  padding-top: 1px;
+
 }
+
+
 .button
-{
-	font-family: Arial, Helvetica, sans-serif;	
-	padding: 5px 15px 5px 10px;
+{	font-family: Arial, Helvetica, sans-serif;	
 	width: 10%;
 	border-radius: 10px;
-	border-style: solid;
-	border-color: black;
 	margin-top: 20px;
+	color: white;
+	text-decoration: none;
 }
 
 
+<<<<<<< HEAD
+
+
+
+
+=======
 .middle{
   font-family: 'arial',sans-serif;
   padding: 15px;
@@ -88,3 +100,4 @@ header
   height: 100%;
   margin-top: 35%;
 }
+>>>>>>> a138b1f9735906c011336f2866be763e36323062

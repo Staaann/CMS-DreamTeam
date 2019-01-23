@@ -45,7 +45,12 @@ header
 }
 .cato
 {
+<<<<<<< HEAD
 	text-align: left;
+=======
+	margin-left: 80%;
+	text-align: right;
+>>>>>>> 4a9ab8e30d75324a817770c36dc1eef7177d1842
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;

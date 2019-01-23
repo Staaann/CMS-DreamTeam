@@ -10,7 +10,7 @@ if (!$_SESSION['username']) {
     exit();
 
 }
-        
+
   $full_name = $_SERVER['PHP_SELF'];
   $name_array = explode('/',$full_name);
   $count = count($name_array);

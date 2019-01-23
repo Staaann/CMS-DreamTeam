@@ -197,7 +197,7 @@ p{
   transition: width .2s ease;
   -webkit-transition: width .4s ease;
 }
- 
+
 #menu li a:hover:after,
 #menu li a.active:after{
   width: 100%;

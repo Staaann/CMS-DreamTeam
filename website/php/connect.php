@@ -12,6 +12,4 @@
 				    {
 				    echo "Connection failed: " . $e->getMessage();
 				    }
-						//simon
-					//	$_SESSION['username'] = $username;
 ?>

@@ -26,8 +26,6 @@ if (!$_SESSION['username']) {
   <h1 class="site-title">DreamTeam</h1>
 <div class="UserProfileName">
 
-
-
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">Portofolio</a></li>

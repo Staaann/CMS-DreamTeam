@@ -22,7 +22,6 @@ if (!$_SESSION['username']) {
   <body>
     <header class="head_profile">
         <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="WebsiteStefan.php">Home</a></li>
         <li><a href="#news">Portofolio</a></li>
         <li><a href="#contact">Blog</a></li>

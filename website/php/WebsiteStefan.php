@@ -33,6 +33,8 @@ if (!$_SESSION['username']) {
   <li><a href="#about">Chat</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a class="log-out" href="#log-out">Log out</a></li>
+  <li><a href="profile.php">Edit profile</a></li>
+
 
 </form>
 </ul>

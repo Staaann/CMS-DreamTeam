@@ -19,7 +19,7 @@ html {
   overflow: auto;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#969696, #A1A1A1);
+  background-color: rgb(42, 112, 224);
   left: 0.5%;
 }
 
@@ -43,7 +43,7 @@ html {
 .welcome_profile{
 font-size: 25px;
 /*background: grey;*/
-background-color: #BDBDBD;
+background-color: #e2e2e2;
 padding: 10px 20px 10px 20px ;
 border-radius: 5px;
 color: #353333;
@@ -51,10 +51,10 @@ color: #353333;
 
 .edit_profile_title{
   /*background: grey;*/
-background-color: #BDBDBD;
+background-color: #ededed;
 padding: 10px 20px 10px 20px ;
 margin-top: 40px;
-border: 2px solid #BDBDBD;
+border: 2px solid #ededed;
 font-style: sans-serif;
 font-size: 25px;
 border-radius:5px 5px 0px 0px;
@@ -62,8 +62,8 @@ color: #353333;
 }
 .edit_profile_body{
 min-height:300px;
-border:solid #BDBDBD;
-border-width:0px 2px 2px 2px;
+border:solid#ededed;
+border-width:0px 3px 3px 3px;
 border-radius: 0px 0px 5px 5px ;
 }
 .edit_profile_body_text{

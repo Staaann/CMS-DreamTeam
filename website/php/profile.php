@@ -48,12 +48,12 @@ Edit profile
         <form action="#" method="post">
           <ul>
             <li><p class="edit_profile_body_text">Name</p></li>
-            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" ></li>
+            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" value="<?php echo  $_SESSION['username'] ?> "></li>
           <br>
         </ul>
       <ul>
         <li><p class="edit_profile_body_text">Email</p></li>
-        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" ></li> <br><br>
+        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo  $_SESSION['email'] ?>" ></li> <br><br>
       </ul>
         <button  class="submit" type="submit" name="button" >Update</button>
       </form>

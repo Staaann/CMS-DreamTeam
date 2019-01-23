@@ -32,7 +32,7 @@ if (!$_SESSION['username']) {
     </header>
 <div class="wrapper_profile">
   <div class="welcome_profile">
-    <a href="WebsiteStefan.php" style="text-decoration: none; color:#0264ff;" >Homepage /</a>
+    <a href="WebsiteStefan.php" style="text-decoration: none; color:white;" >Homepage /</a>
     <?php
     //simon
     echo "Profile / ";

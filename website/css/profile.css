@@ -19,7 +19,7 @@ html {
   overflow: auto;
   margin: 0;
   padding: 0;
-  background-color: #595959;
+  background-color: #1a1a1a;
   left: 0.5%;
 }
 
@@ -43,7 +43,7 @@ html {
 .welcome_profile{
 font-size: 25px;
 /*background: grey;*/
-background-color: #595959;
+background-color: #1a1a1a;
 padding: 10px 20px 10px 20px ;
 border-radius: 5px;
 color: #cccccc;
@@ -51,10 +51,10 @@ color: #cccccc;
 
 .edit_profile_title{
   /*background: grey;*/
-background-color: #595959;
+background-color: #333333;
 padding: 10px 20px 10px 20px ;
 margin-top: 40px;
-border: 2px solid #595959;
+border: 2px solid #333333;
 font-style: sans-serif;
 font-size: 25px;
 border-radius:5px 5px 0px 0px;

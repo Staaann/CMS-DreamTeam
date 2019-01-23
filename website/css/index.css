@@ -36,11 +36,11 @@ a {
  background: ;
   width: 100px;
   cursor:pointer;
-  border: 1.5px solid black;
+  border: 1.5px solid white;
   border-radius:40px;
   font-weight: bold;
   padding:2px 1px 2px;
-  color: black;
+  color: white;
   font-family: 'Century Gothic',sans-serif;
   font-size:14px;
   text-align:left;
@@ -54,7 +54,7 @@ a {
 }
 
 .header {
-  background-image: linear-gradient(#42E51D, #57FF68);
+  background-image: linear-gradient(black, #272827);
   background-size: cover;
   padding: 12px;
   border-radius:0px;

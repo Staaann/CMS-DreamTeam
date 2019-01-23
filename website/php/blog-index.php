@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
 <<<<<<< HEAD
@@ -29,30 +29,5 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				 
-=======
-	<header 
-
-	</header>  
-
-	<div class="wrapper">
-
-			<div class="box1">
-			 	<h1 class="Blog">Blog</h1>
-			 </div>
-
-			<div class="list">
-				<ul class="ul">
-					<li><a href="#home">CAT1</a></li>
-
-					<li><a href="#home">CAT2</a></li>
-					<li><a href="#home">CAT3</a></li>
-					<li><a href="#home">CAT4</a></li>
-				</ul>
-			</div>
-
-			
-	</div>
-
->>>>>>> a138b1f9735906c011336f2866be763e36323062
 </body>
 </html>

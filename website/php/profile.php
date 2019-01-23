@@ -39,40 +39,46 @@ if (!$_SESSION['username']) {
     echo  $_SESSION['username']
     ?>
   </div>
+    <!-- Edit profile erea--->
     <div class="edit_profile_title">
 Edit profile
 </div>
   <div class="edit_profile_body">
       <br>
-        <ul>
-          <li><p class="edit_profile_body_text">Name</p></li>
-          <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" required ></li>
+        <form action="#" method="post">
+          <ul>
+            <li><p class="edit_profile_body_text">Name</p></li>
+            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" ></li>
           <br>
         </ul>
       <ul>
         <li><p class="edit_profile_body_text">Email</p></li>
-          <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" required></li> <br><br>
-        </ul>
-          <button  class="submit" type="submit" name="button" >Update</button>
+        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" ></li> <br><br>
+      </ul>
+        <button  class="submit" type="submit" name="button" >Update</button>
+      </form>
         </div>
-
+          <!-- End profile erea  --->
+        <!--  change password erea --->
       <div class="edit_profile_title">
         Change password
       </div>
         <div class="edit_profile_body">
           <br>
+          <form action="#" method="post">
             <ul>
               <li><p class="edit_profile_body_text">New password</p></li>
-              <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" required ></li>
+              <li><input class="edit_profile_vakjes" type="password" name="password"  placeholder="Password" required ></li>
             <br>
           </ul>
           <ul>
         <li> <p class="edit_profile_body_text">Repeat password</p></li>
-          <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" required></li>
+          <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
            <br><br></ul>
             <button  class="submit" type="submit" name="button" >Update</button>
-          </div>
-
+          </form>
+        </div>
+          <!-- Endo password erea --->
 
 
 

@@ -29,7 +29,7 @@ if (!$_SESSION['username']) {
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">Portofolio</a></li>
-  <li><a href="#contact">Blog</a></li>
+  <li><a href="blog-index.php">Blog</a></li>
   <li><a href="#about">Chat</a></li>
   <li><a href="#contact">Contact</a></li>
 

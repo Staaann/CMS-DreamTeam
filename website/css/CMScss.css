@@ -1,4 +1,4 @@
-
+/* dit is alleen voor login registreen en wachtwoord vergeten pagina's
 /* code van alle pagina's bij elkaar (j)(s)*/
 html{
 background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
@@ -35,7 +35,7 @@ padding:20px 50px;
 }
 
 /*login text (j)*/
-.h1{
+h1{
 	font-family: sans-serif;
 	color:  black;
 }
@@ -142,6 +142,10 @@ text-decoration: none;
 
 }
 
+
 .formulier{
 	margin-top: 20px;
 }
+
+
+

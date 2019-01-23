@@ -53,7 +53,7 @@
 
 <body>
  	<div class="loginplekbg">
- 				<h1 class="h1">login</h1>
+ 				<h1>login</h1>
 
 
  						<form action="index.php" method="post">

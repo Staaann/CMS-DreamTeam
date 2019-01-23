@@ -1,6 +1,9 @@
 <?php 
 require('connect.php');
 
+// dit is php/pdo voor wachtwoord veranderen
+//jonathan
+
 if (isset($_POST["reset-reques-submit"])) {
 
 	$selector =bin2hex(random_bytes(8));
@@ -12,6 +15,9 @@ if (isset($_POST["reset-reques-submit"])) {
 
 	$userEmail = $_POST["email"];
 
+
+
+// dit moet naar pdo het staat nu op mysqli 
 	$sql ="DELETE FORM wwReset WHERE wwResetEmail=";
 	$stmt = mysqli_stmt_init()
 

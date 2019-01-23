@@ -141,8 +141,8 @@ p{
   position: fixed;
   top: 0;
   width: 100%;
-    top: 35px;
-    right: 200px;
+    top: 34px;
+    right: 170px;
     font-size: 95%;
     color: white;
     font-family: 'Century Gothic',sans-serif;
@@ -150,9 +150,7 @@ p{
   padding: 0;
   width: 9%;
   border-radius:22px;
-  background-color: #C7C7C7;
   text-align: center;
-  background: #C7C7C7;
 }
 
 

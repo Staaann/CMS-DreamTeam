@@ -1,5 +1,6 @@
-
 <?php
+//error_reporting(0);
+//ini_set('display_errors', 0);
 require('connect.php');
 
 // Simon // make sure user is logged in needed every page!
@@ -9,9 +10,12 @@ if (!$_SESSION['username']) {
     exit();
 
 }
-      error_reporting(0);
-      ini_set('display_errors', 0)
- ?>
+
+  $full_name = $_SERVER['PHP_SELF'];
+  $name_array = explode('/',$full_name);
+  $count = count($name_array);
+  $page_name = $name_array[$count-1];
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -26,12 +30,15 @@ if (!$_SESSION['username']) {
   <h1 class="site-title">DreamTeam</h1>
 <div class="UserProfileName">
 
+<nav id="menu">
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">Portofolio</a></li>
-  <li><a href="#contact">Blog</a></li>
-  <li><a href="#about">Chat</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="#">Home</a></li>
+  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Portfolio</a></li>
+  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-index.php">Blog</a></li>
+  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Chat</a></li>
+  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
+</ul>
+</nav>
 
 </form>
 </ul>

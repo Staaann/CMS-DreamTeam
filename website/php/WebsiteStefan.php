@@ -24,7 +24,6 @@ if (!$_SESSION['username']) {
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
   <body>
-
  <div class="header">
 
   <h1 class="site-title">DreamTeam</h1>
@@ -34,10 +33,9 @@ if (!$_SESSION['username']) {
 <ul>
   <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="#">Home</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Portfolio</a></li>
-  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-index.php">Blog</a></li>
-  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Chat</a></li>
+  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-stan.php">Blog</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
-    <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
+  <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
 </ul>
 </nav>
 
@@ -45,11 +43,7 @@ if (!$_SESSION['username']) {
 </ul>
 
 </body>
-  <?php
-  //simon
-  echo "Welcome ";
-  echo  $_SESSION['username'];
-  ?>
+ 
   </div>
 </div>
 <br>
@@ -58,7 +52,12 @@ if (!$_SESSION['username']) {
       <p>
         <a href="logout.php" class="logout logoutHov">
            Log out
-        </a>
+        </a> 
+            <?php
+            //simon
+            echo "Welcome ";
+            echo  $_SESSION['username'];
+            ?>
       </p>
     </div>
 

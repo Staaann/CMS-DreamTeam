@@ -9,6 +9,7 @@
           $password = $_POST['password'];
           $password_repeat = $_POST['password_repeat'];
           $email = $_POST['email'];
+          $passwordlength= strlen($password);
 
 
   //simon
@@ -32,9 +33,11 @@
 
   elseif ($username_count > 0) {
     echo "That username is already in use";
-  } //einde simon
+  } 
 
-
+    elseif ($passwordlength <6) {
+  echo "password must be longer than 6";
+    }//einde simon
           elseif ($password != $password_repeat)
           {
             echo "Password doesnt match";

@@ -24,7 +24,6 @@ if (!$_SESSION['username']) {
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
   <body>
-s
  <div class="header">
 
   <h1 class="site-title">DreamTeam</h1>

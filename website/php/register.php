@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    require('connect.php');
 
           if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
@@ -11,11 +11,25 @@
           $email = $_POST['email'];
 
 
+//simon
+          $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE email=?");
+     $stmt->execute(array($email));
+     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+       $email_count = $row["count"];
+     }
+     if ($email_count > 0) {
+       echo "That email address is already in use";
+     }
 
-     
-
-
-          if ($password != $password_repeat)
+     $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE username=?");
+$stmt->execute(array($username));
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+  $username_count = $row["count"];
+}
+if ($username_count > 0) {
+  echo "That username is already in use";
+} //einde simon
+          elseif ($password != $password_repeat)
           {
             echo "Password doesnt match";
           }
@@ -23,7 +37,7 @@
           else{
 
           if ($password != $password_repeat) {
-            echo "Password doesnt match";  
+            echo "Password doesnt match";
             }
 
               else{
@@ -35,7 +49,6 @@
           //var_dump($hashed);
 
 
-      require('connect.php');
 
 
       $sql = "INSERT INTO users (username, password, email) VALUES (:username, :password, :email)";
@@ -90,6 +103,3 @@
 
         </body>
       </html>
-
-
-

@@ -79,6 +79,26 @@ Edit profile
           </form>
         </div>
           <!-- Endo password erea --->
+          <!--  change password erea --->
+        <div class="edit_profile_title">
+          Change profile picture
+        </div>
+          <div class="edit_profile_body">
+            <br>
+            <form action="#" method="post">
+              <ul>
+                <li><p class="edit_profile_body_text">New password</p></li>
+                <li><input class="edit_profile_vakjes" type="password" name="password"  placeholder="Password" required ></li>
+              <br>
+            </ul>
+            <ul>
+          <li> <p class="edit_profile_body_text">Repeat password</p></li>
+            <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
+             <br><br></ul>
+              <button  class="submit" type="submit" name="button" >Update</button>
+            </form>
+          </div>
+            <!-- Endo password erea --->
 
 
 

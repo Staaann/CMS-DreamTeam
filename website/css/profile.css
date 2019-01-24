@@ -11,7 +11,7 @@ html {
 .wrapper_profile{
   margin: 70px 25%;
 }
-
+/*header area*/
 .head_profile  ul {
   list-style-type: none;
   top: 0;
@@ -39,7 +39,8 @@ html {
   background-color: #BDBDBD;
 
 }
-
+/*End header area*/
+/*home page link / profile / admin*/
 .welcome_profile{
 font-size: 25px;
 /*background: grey;*/
@@ -48,7 +49,7 @@ padding: 10px 20px 10px 20px ;
 border-radius: 5px;
 color: #cccccc;
 }
-
+/*Edit profile title*/
 .edit_profile_title{
   /*background: grey;*/
 background-color: #333333;
@@ -60,6 +61,7 @@ font-size: 25px;
 border-radius:5px 5px 0px 0px;
 color: white;
 }
+/*body van de hokjes */
 .edit_profile_body{
 min-height:300px;
 border:solid#595959;
@@ -70,7 +72,7 @@ background-color: #808080;
 .edit_profile_body_text{
 margin-left: 140px;
 min-width: 100px;
-font-style: sans-serif;
+font-style:times;
 color: #353333;
 font-size: 20px;
 font-weight: bold;
@@ -78,7 +80,7 @@ float: left;
 position: absolute;
 right: 60%;
 
-
+/*imput velden*/
 }
 .edit_profile_vakjes{
 float:left;
@@ -91,7 +93,14 @@ margin: 15px 300px;
 border-radius: 3px;
 background-color: rgba(255, 250, 210, 0.1);
 border: 1.4px solid #595959;
+color: white;
 }
+
+input::placeholder {
+  color: rgb(230, 230, 230, 0.8);
+}
+/*einde imput*/
+/*Naast elkaar zetten imput en text*/
 .edit_profile_body ul{
   list-style-type: none;
   overflow: auto;
@@ -99,6 +108,7 @@ border: 1.4px solid #595959;
 .edit_profile_body li{
 text-align: center;
 }
+/*De knoppen update*/
 .submit{
 border:0;
 height: 40px;
@@ -109,7 +119,7 @@ margin-left: 45%;
 font-size: 17px;
 background-color: rgb(42, 112, 224);
 border-radius: 5px;
-border: 1px solid ;
+border: 1px solid rgb(42, 112, 224) ;
 color: white;
 }
 

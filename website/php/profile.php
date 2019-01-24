@@ -17,11 +17,12 @@ if (!$_SESSION['username']) {
     <meta charset="utf-8">
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="../css/profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="head_profile">
         <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="WebsiteStefan.php">Home</a></li>
         <li><a href="#news">Portofolio</a></li>
         <li><a href="#contact">Blog</a></li>
         <li><a href="#about">Chat</a></li>
@@ -29,24 +30,58 @@ if (!$_SESSION['username']) {
       </form>
       </ul>
     </header>
-
 <div class="wrapper_profile">
   <div class="welcome_profile">
+    <a href="WebsiteStefan.php" style="text-decoration: none; color:white;" >Homepage /</a>
     <?php
     //simon
-    echo "Profile, ";
+    echo "Profile / ";
     echo  $_SESSION['username']
     ?>
   </div>
+    <!-- Edit profile erea--->
     <div class="edit_profile_title">
 Edit profile
 </div>
   <div class="edit_profile_body">
       <br>
-      <p class="edit_profile_body_text">Name:</p>
-      <br>
-      <p class="edit_profile_body_text">Email:</p>
-</div>
+        <form action="#" method="post">
+          <ul>
+            <li><p class="edit_profile_body_text">Name</p></li>
+            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" value="<?php echo  $_SESSION['username'] ?> "></li>
+          <br>
+        </ul>
+      <ul>
+        <li><p class="edit_profile_body_text">Email</p></li>
+        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo  $_SESSION['email'] ?>" ></li> <br><br>
+      </ul>
+        <button  class="submit" type="submit" name="button" >Update</button>
+      </form>
+        </div>
+          <!-- End profile erea  --->
+        <!--  change password erea --->
+      <div class="edit_profile_title">
+        Change password
+      </div>
+        <div class="edit_profile_body">
+          <br>
+          <form action="#" method="post">
+            <ul>
+              <li><p class="edit_profile_body_text">New password</p></li>
+              <li><input class="edit_profile_vakjes" type="password" name="password"  placeholder="Password" required ></li>
+            <br>
+          </ul>
+          <ul>
+        <li> <p class="edit_profile_body_text">Repeat password</p></li>
+          <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
+           <br><br></ul>
+            <button  class="submit" type="submit" name="button" >Update</button>
+          </form>
+        </div>
+          <!-- Endo password erea --->
+
+
+
   </div>
   </body>
 </html>

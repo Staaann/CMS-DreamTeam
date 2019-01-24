@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
 <<<<<<< HEAD

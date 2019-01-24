@@ -34,7 +34,7 @@ if (!$_SESSION['username']) {
 <ul>
   <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="#">Home</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Portfolio</a></li>
-  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-index.php">Blog</a></li>
+  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-stan.php">Blog</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Chat</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
 </ul>

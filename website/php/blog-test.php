@@ -1,21 +1,14 @@
 <?php 
-
+require('connect.php');
 if (isset( $_POST['tekst'])){
 	$tekst = $_POST['tekst'];
 
-}else{
-	
-	require('connect.php');
-
-	$sql = "INSERT INTO blog (tekst) VALUES (:tekst)";
-    $query = $conn->prepare($sql);
-
+    	$sql = "INSERT INTO blog (tekst) VALUES (:tekst)";
+      $query = $conn->prepare($sql);
       $query->bindParam(':tekst', $tekst, PDO::PARAM_STR);
       $query->execute();
      }
-     	
-
- ?>
+?>
 
 
 
@@ -33,10 +26,15 @@ if (isset( $_POST['tekst'])){
 
 <body>
 <h1></h1>
-  <form method="post">
-    <textarea name="tekst" id="mytextarea">Renko</textarea>
+  <form method="post" action="blog-test.php">
+    <textarea name="tekst" id="mytextarea">ADAD</textarea>
     <button  class="submit" type="submit" name="button" >Test</button>
   </form>
 
+  <div>
+    <?php
+      $sql = "SELECT tekst FROM blog";
+    ?>
+  </div>
 </body>
 </html>

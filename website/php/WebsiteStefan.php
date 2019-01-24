@@ -43,11 +43,7 @@ if (!$_SESSION['username']) {
 </ul>
 
 </body>
-  <?php
-  //simon
-  echo "Welcome ";
-  echo  $_SESSION['username'];
-  ?>
+ 
   </div>
 </div>
 <br>
@@ -56,7 +52,12 @@ if (!$_SESSION['username']) {
       <p>
         <a href="logout.php" class="logout logoutHov">
            Log out
-        </a>
+        </a> 
+            <?php
+            //simon
+            echo "Welcome ";
+            echo  $_SESSION['username'];
+            ?>
       </p>
     </div>
 

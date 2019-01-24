@@ -24,7 +24,8 @@ if (!$_SESSION['username']) {
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=5xpfjku55046lllgrobb2m0ru86f3gov7egzz8bru5ozabm4"></script>
   </head>
 <body>
 	 <?php

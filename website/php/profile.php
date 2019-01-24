@@ -1,6 +1,5 @@
 <?php
 require('connect.php');
-
 // Simon // make sure user is logged in needed every page!
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
@@ -19,7 +18,24 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC))
 }
 
 
+//if (isset( $_POST['username'] , $_POST['email'] )){
+//aids
+/*$data = [
+   'username' => $username,
+  'email' => $email,
+
+];
+/$sql = 'UPDATE users SET username=:username, email=:email WHERE username = "'.$_SESSION['username'].'"';
+$query= $conn->prepare($sql);
+$query->execute($data);
+}
+//aids*/
  ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -54,7 +70,7 @@ Edit profile
 </div>
   <div class="edit_profile_body">
       <br>
-        <form action="#" method="post">
+        <form action="profile.php" method="post">
           <ul>
             <li><p class="edit_profile_body_text">Name</p></li>
             <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" value="<?php echo  $_SESSION['username'] ?> "></li>

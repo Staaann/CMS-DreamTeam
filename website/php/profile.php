@@ -6,10 +6,19 @@ if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
     header("location: index.php");
     exit();
-
 }
-      error_reporting(0);
-      ini_set('display_errors', 0)
+
+
+$query = $conn->prepare('SELECT email FROM users WHERE username = "'.$_SESSION['username'].'"');
+//$query->bindValue(':username', $userame, PDO::PARAM_STRING);
+$query->execute();
+
+while ($row = $query->fetch(PDO::FETCH_ASSOC))
+{
+    $email = $row['email'];
+}
+
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -53,7 +62,7 @@ Edit profile
         </ul>
       <ul>
         <li><p class="edit_profile_body_text">Email</p></li>
-        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo  $_SESSION['email'] ?>" ></li> <br><br>
+        <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo $email; ?>" ></li> <br><br>
       </ul>
         <button  class="submit" type="submit" name="button" >Update</button>
       </form>

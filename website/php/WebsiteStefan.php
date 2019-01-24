@@ -24,7 +24,7 @@ if (!$_SESSION['username']) {
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
   <body>
-
+s
  <div class="header">
 
   <h1 class="site-title">DreamTeam</h1>
@@ -37,7 +37,7 @@ if (!$_SESSION['username']) {
   <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-stan.php">Blog</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Chat</a></li>
   <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
-    <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
+  <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
 </ul>
 </nav>
 

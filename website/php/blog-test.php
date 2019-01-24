@@ -1,19 +1,20 @@
 <?php 
+
 if (isset( $_POST['tekst'])){
-
 	$tekst = $_POST['tekst'];
-	var_dump($_POST);
-	echo $tekst;
 
-
+}else{
+	
 	require('connect.php');
 
 	$sql = "INSERT INTO blog (tekst) VALUES (:tekst)";
     $query = $conn->prepare($sql);
 
-      $query->bindParam(':tekst', $username, PDO::PARAM_STR);
+      $query->bindParam(':tekst', $tekst, PDO::PARAM_STR);
       $query->execute();
      }
+     	
+
  ?>
 
 

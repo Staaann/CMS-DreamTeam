@@ -11,24 +11,30 @@
           $email = $_POST['email'];
 
 
-//simon
-          $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE email=?");
-     $stmt->execute(array($email));
-     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-       $email_count = $row["count"];
-     }
-     if ($email_count > 0) {
-       echo "That email address is already in use";
-     }
+  //simon
+        $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE email=?");
+       $stmt->execute(array($email));
+       while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+         $email_count = $row["count"];
+       }
+       $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE username=?");
+  $stmt->execute(array($username));
+  while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $username_count = $row["count"];
+  }
+  if ($username_count AND $email_count > 0) {
+    echo "That username and email is already in use";
+  }
 
-     $stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE username=?");
-$stmt->execute(array($username));
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-  $username_count = $row["count"];
-}
-if ($username_count > 0) {
-  echo "That username is already in use";
-} //einde simon
+  elseif  ($email_count > 0) {
+    echo "That email address is already in use";
+  }
+
+  elseif ($username_count > 0) {
+    echo "That username is already in use";
+  } //einde simon
+
+
           elseif ($password != $password_repeat)
           {
             echo "Password doesnt match";

@@ -24,16 +24,19 @@
 				}
 			?>
 
-		<form>
+			<form action="php-checkt-ww.php" method="post">
+				<input type="hidden" name="selector" value="<?php echo $selector ?>">
+				<input type="hidden" name="validator" value="<?php echo $validator ?>">
 
-		<input class="formulierwachtwoord" type="password" name="password" placeholder="new password" required>
-		<br>
-		<input class="formulierwachtwoord" type="password" name="password" placeholder="repeat password"
-		 required>
-		<br>
-		<input class="loginknop " type="submit"  value ="confirm">
+				<input class="formulierwachtwoord" type="password" name="password" placeholder="new password" required>
+				<br>
+				<input class="formulierwachtwoord" type="password" name="password" placeholder="repeat password"
+		 			required>
+				<br>
+				<input class="loginknop " type="submit"  value ="confirm">
+
+			</form>
 		
-		</form>
 
 	</div>
 

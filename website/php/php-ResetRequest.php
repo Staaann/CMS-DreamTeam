@@ -51,7 +51,7 @@ if (isset($_POST["reset-request-submit"])) {
 //($to,$subject,$message) naar wie , onderwerp, tekst,
 		$to = $userEmail; 
 
-		$subject = 'Reset your password for Dreamteam';
+		$subject = 'Wachtwoord veranderen voor Dreamteam';
 
 		$message ='<p>U hebt een nieuw wachtwoord aangevraagd voor Dreamteam.<br>
 		Hieronder vind u een link om uw wachtwoord te veranderen. <br><br>

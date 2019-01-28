@@ -1,7 +1,7 @@
 <?php
     require('connect.php');
 
-          if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
+            if (isset( $_POST['username'] , $_POST['password'] , $_POST['password_repeat'] , $_POST['email'] )){
 
            // var_dump($_POST);
 
@@ -33,11 +33,14 @@
 
   elseif ($username_count > 0) {
     echo "That username is already in use";
-  } 
+  }
 
     elseif ($passwordlength <6) {
   echo "password must be longer than 6";
     }//einde simon
+
+
+    
           elseif ($password != $password_repeat)
           {
             echo "Password doesnt match";

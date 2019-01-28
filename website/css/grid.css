@@ -1,12 +1,13 @@
+html{
+
+}
+
 .wrapper{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-}
-.wrapper > div{
-  background:#eee;
+  min-height: 300px;
 }
 
-.wrapper > div:nth-child(odd){
-  background: #ddd;
+.tekst{
+  grid-column-start: 2;
 }
-

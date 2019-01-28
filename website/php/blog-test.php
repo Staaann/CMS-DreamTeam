@@ -7,7 +7,16 @@ if (isset( $_POST['tekst'])){
       $query = $conn->prepare($sql);
       $query->bindParam(':tekst', $tekst, PDO::PARAM_STR);
       $query->execute();
+      echo "gay";
      }
+
+
+      $getdata = $conn->prepare("SELECT * FROM blog");
+      $getdata->fetchAll();
+
+      $tekst = $getdata->fetch();
+      echo $tekst;
+       
 ?>
 
 
@@ -22,19 +31,25 @@ if (isset( $_POST['tekst'])){
     selector: '#mytextarea'
   });
   </script>
+  <link rel="stylesheet" type="text/css" href="../css/grid.css">
 </head>
 
 <body>
 <h1></h1>
-  <form method="post" action="blog-test.php">
-    <textarea name="tekst" id="mytextarea">ADAD</textarea>
+  <div class="wrapper">
+    <div>
+      
+    </div>
+  <form method="post" action="blog-test.php" class="tekst">
+    <textarea name="tekst" id="mytextarea"></textarea>
     <button  class="submit" type="submit" name="button" >Test</button>
   </form>
-
   <div>
     <?php
-      $sql = "SELECT tekst FROM blog";
     ?>
   </div>
+  <div>
+            <a class="massage" href="viewpages.php">View pages</a>
+</div>
 </body>
 </html>

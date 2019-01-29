@@ -57,9 +57,9 @@
 
 
  						<form action="index.php" method="post">
-  								<input class="formulierusername" type="text" placeholder="username" name="username"  >
+  								<input class="formulierusername" type="text" placeholder="username" name="username" required>
   								<br>
-  								<input class="formulierwachtwoord" type="password" placeholder="password" name="password" >
+  								<input class="formulierwachtwoord" type="password" placeholder="password" name="password" required >
   								<br>
  								<input class="loginknop" type="submit" value ="login">
  								<br><br>

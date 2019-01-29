@@ -19,7 +19,7 @@ if (isset($_POST["reset-request-submit"])) {
 
 // dit zorgt ervoor dat je de link maar 1 keer kan gebruiken  
 	$sql ="DELETE FORM wwReset WHERE wwResetEmail=?";
-	$stmt = mysqli_stmt_init($conn);
+	$stmt = mysqli_stmt_in+t($conn);
 	if (!mysli_stmt_prepare($stmt, $sql)) {
 			echo "there was an error!";
 			exit();
@@ -59,10 +59,9 @@ if (isset($_POST["reset-request-submit"])) {
 		Hier is uw wachtwoord reset link:  ';
 
 
-// hier is een error (((((je kan je email niet versturen !!!)))))
-//  Parse error: syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\CMS-DreamTeam\website\php\php-ResetRequest.php on line 61
-		
-		$message.= '<a href="' .$url '">' .url .' </a></p>';
+// Parse error: syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\CMS-DreamTeam\website\php\php-ResetRequest.php on line 61
+	
+		$message.= '<a herf="'.url . '">' .url . '</a></p>';
 
 		$hearders ="From: Dreamteam <officialdreamteam26@gamil.com>\r\n";
 		$hearders .= "Reply-To: officialdreamteam26@gamil.com"\r\n;
@@ -81,3 +80,4 @@ if (isset($_POST["reset-request-submit"])) {
 }
 	
 
++

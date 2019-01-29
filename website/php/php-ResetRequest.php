@@ -64,7 +64,7 @@ if (isset($_POST["reset-request-submit"])) {
 		$message.= '<a herf="'.url . '">' .url . '</a></p>';
 
 		$hearders ="From: Dreamteam <officialdreamteam26@gamil.com>\r\n";
-		$hearders .= "Reply-To: officialdreamteam26@gamil.com"\r\n;
+		$hearders .= "Reply-To: officialdreamteam26@gamil.com\r\n";
 		$hearders .= "Conect-type: text/html\r\n";
 
 		mail($to, $subject, $message, $hearders);

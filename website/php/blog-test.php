@@ -49,6 +49,7 @@ if (isset( $_POST['tekst'])){
     ?>
   </div>
   <div>
+    <!-- adasd -->
             <a class="massage" href="viewpages.php">View pages</a>
 </div>
 </body>

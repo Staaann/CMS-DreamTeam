@@ -58,7 +58,7 @@ if (isset($_POST["reset-request-submit"])) {
 		!!LET OP DEZE LINK WERKT, MAAR 1 KEER EN VOOR MAAR 2 UREN <br>
 		Hier is uw wachtwoord reset link:  ';
 
-<<<<<<< HEAD
+
 		$message.= '<a href=" ' .$url '  ' .url .' > </a> </p>';
 =======
 

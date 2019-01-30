@@ -1,5 +1,5 @@
 <? php 
-require('wwconnect.php');
+require 'wwconnect.php';
 
 if (isset($_POST["reset-ww-knop"])) {
 	$selector = $_POST["selector"];

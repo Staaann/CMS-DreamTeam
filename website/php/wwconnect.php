@@ -1,8 +1,15 @@
 <?php
-$dbServername= "localhost";
-$dbUsername= "root";
-$dbPassword= "";
-$dbName= "cms2";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
-$conn = mysqi_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
 ?>
+	

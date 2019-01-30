@@ -1,5 +1,5 @@
 <?php 
-require('wwconnect.php');
+require'wwconnect.php';
 
 // dit is php/mysqli voor wachtwoord veranderen
 //jonathan
@@ -80,8 +80,7 @@ if (isset($_POST["reset-request-submit"])) {
 
 
 }else{
-	header("location:index.php")
+	header("location: index.php");
 }
 	
-
-+
+		

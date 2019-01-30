@@ -1,13 +1,48 @@
 html{
-
+ font-family: 'Century Gothic',sans-serif;
 }
 
 .wrapper{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  min-height: 300px;
+  grid-gap: 0em;
+}
+
+.header{
+ grid-column-start: 1;
+ grid-column-start: 3;
+ background-color: 	black;
+ padding-top: 100px;
+ color: white;
+ font-size: 47px;
+ letter-spacing: 1px;
+ text-align: center;
 }
 
 .tekst{
   grid-column-start: 2;
+ }
+
+ .tekstvak1{
+  grid-column-start: 2;
+   grid-row-start: 3;
+
+
 }
+
+.massege{
+grid-row-start : 2;		
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

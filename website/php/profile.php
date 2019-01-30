@@ -7,7 +7,17 @@ if (!$_SESSION['username']) {
     exit();
 }
 
+if (isset( $_POST['email'] )){
 
+$data = [
+
+  'email' => $_POST['email'],
+
+];
+$sql = 'UPDATE users SET email= "'.$_POST['email'].'" WHERE username = "'.$_SESSION['username'].'"';
+$query= $conn->prepare($sql);
+$query->execute($data);
+}
 $query = $conn->prepare('SELECT email FROM users WHERE username = "'.$_SESSION['username'].'"');
 //$query->bindValue(':username', $userame, PDO::PARAM_STRING);
 $query->execute();
@@ -17,19 +27,31 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC))
     $email = $row['email'];
 }
 
+//we123123123123123123123123123123123123123123
+//12312312312312312312312312312312312312312312
+//12312312312312312312312312312312312312312312
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset( $_POST['username'] )){
 
-//if (isset( $_POST['username'] , $_POST['email'] )){
-//aids
-/*$data = [
-   'username' => $username,
-  'email' => $email,
+$data = [
+
+  'username' => $_POST['username'],
 
 ];
-/$sql = 'UPDATE users SET username=:username, email=:email WHERE username = "'.$_SESSION['username'].'"';
+$sql = 'UPDATE users SET username= "'.$_POST['username'].'" WHERE username = "'.$_SESSION['username'].'"';
 $query= $conn->prepare($sql);
 $query->execute($data);
 }
-//aids*/
+$query = $conn->prepare('SELECT username FROM users WHERE username = "'.$_SESSION['username'].'"');
+//$query->bindValue(':username', $userame, PDO::PARAM_STRING);
+$query->execute();
+header("location: index.php");
+while ($row = $query->fetch(PDO::FETCH_ASSOC))
+{
+
+    $username = $row['username'];
+}
+}
  ?>
 
 
@@ -73,7 +95,7 @@ Edit profile
         <form action="profile.php" method="post">
           <ul>
             <li><p class="edit_profile_body_text">Name</p></li>
-            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" value="<?php echo  $_SESSION['username'] ?> "></li>
+            <li><input class="edit_profile_vakjes" type="text" name="username"  placeholder="Username" value="<?php echo  $_SESSION['username']; ?>"></li>
           <br>
         </ul>
       <ul>
@@ -81,6 +103,7 @@ Edit profile
         <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo $email; ?>" ></li> <br><br>
       </ul>
         <button  class="submit" type="submit" name="button" >Update</button>
+        <p style="text-align:center;">*changing this will log you out</p>
       </form>
         </div>
           <!-- End profile erea  --->
@@ -124,7 +147,6 @@ Edit profile
             </form>
           </div>
             <!-- Endo password erea --->
-
 
 
   </div>

@@ -59,9 +59,13 @@ if (isset($_POST["reset-request-submit"])) {
 		Hier is uw wachtwoord reset link:  ';
 
 
+		$message.= '<a href=" ' .$url '  ' .url .' > </a> </p>';
+=======
+
 // Parse error: syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING) in C:\xampp\htdocs\CMS-DreamTeam\website\php\php-ResetRequest.php on line 61
 	
 		$message.= '<a herf="'.url . '">' .url . '</a></p>';
+>>>>>>> 3720ac30d617a952099ef75b9b29cd442f9e3062
 
 		$hearders ="From: Dreamteam <officialdreamteam26@gamil.com>\r\n";
 		$hearders .= "Reply-To: officialdreamteam26@gamil.com\r\n";

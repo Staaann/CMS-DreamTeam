@@ -40,9 +40,5 @@ if (!$_SESSION['username']) {
 
 
 	</div>
-
-=======
-
->>>>>>> dd1dd88c82edf769c4e9d65890890b36c6feffed
 </body>
 </html>

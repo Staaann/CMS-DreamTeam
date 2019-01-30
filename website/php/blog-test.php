@@ -35,21 +35,26 @@ if (isset( $_POST['tekst'])){
 </head>
 
 <body>
-<h1></h1>
+  <div class="header">
+      <p>DreamTeam</p>
+  </div>
+ 
   <div class="wrapper">
-    <div>
-      
-    </div>
+
   <form method="post" action="blog-test.php" class="tekst">
     <textarea name="tekst" id="mytextarea"></textarea>
     <button  class="submit" type="submit" name="button" >Test</button>
   </form>
-  <div>
-    <?php
-    ?>
-  </div>
-  <div>
-            <a class="massage" href="viewpages.php">View pages</a>
+
+
+
+    <div class="tekstvak1">
+     <?php 
+     ?> 
+    </div>
+
+    <!-- adasd -->
+            <a class="massege" href="viewpages.php">View pages</a>
 </div>
 </body>
 </html>

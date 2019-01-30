@@ -1,4 +1,5 @@
 <?php 
+  session_start();
 require('connect.php');
 if (isset( $_POST['tekst'])){
 	$tekst = $_POST['tekst'];
@@ -7,7 +8,7 @@ if (isset( $_POST['tekst'])){
       $query = $conn->prepare($sql);
       $query->bindParam(':tekst', $tekst, PDO::PARAM_STR);
       $query->execute();
-      echo "gay";
+      echo "";
      }
 
 
@@ -49,8 +50,11 @@ if (isset( $_POST['tekst'])){
 
 
     <div class="tekstvak1">
-     <?php 
+
+     <?php
+     require('viewpages.php'); 
      ?> 
+     
     </div>
 
     <!-- adasd -->

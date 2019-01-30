@@ -4,8 +4,8 @@
 
 
 		foreach($pages as $page){
-		echo $page['id'];	
-		
+		$pages	$page['id'];	
+
 		}
 
 

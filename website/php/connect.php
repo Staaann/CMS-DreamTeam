@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	//session_start();
 				try {
 				    $conn = new PDO("mysql:host=localhost;dbname=cms2",'root','');
 

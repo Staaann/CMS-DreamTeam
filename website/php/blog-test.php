@@ -49,7 +49,8 @@ if (isset( $_POST['tekst'])){
 
 
     <div class="tekstvak1">
-      <p> jojojojojojojo </p> 
+     <?php 
+     ?> 
     </div>
 
     <!-- adasd -->

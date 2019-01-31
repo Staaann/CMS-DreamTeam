@@ -28,8 +28,7 @@
 				    //pak de data
 
 				    if($query->rowCount() >= 1) {
-
-				    var_dump($query);
+				        header("location: WebsiteStefan.php");
 				    
 				    //als het fout is geef de errror
 				    
@@ -38,7 +37,7 @@
 				        echo $messeg;
 				    }
 				}
-				        header("location: WebsiteStefan.php");
+
 				}
 
 ?>

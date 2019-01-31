@@ -39,7 +39,7 @@ if (!$_SESSION['username']) {
   		<li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
 	</ul>
 	</nav>
-	<div>
+	<div class="username">
       <p>
         <a href="logout.php" class="logout logoutHov">
            Log out

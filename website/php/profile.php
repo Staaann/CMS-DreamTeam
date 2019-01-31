@@ -6,8 +6,13 @@ if (!$_SESSION['username']) {
     header("location: index.php");
     exit();
 }
-
+            //Change email
+//we123123123123123123123123123123123123123123
+//12312312312312312312312312312312312312312312
+//12312312312312312312312312312312312312312312
+if (isset($_POST['Submit1'])) {
 if (isset( $_POST['email'] )){
+
 
 $data = [
 
@@ -17,7 +22,7 @@ $data = [
 $sql = 'UPDATE users SET email= "'.$_POST['email'].'" WHERE username = "'.$_SESSION['username'].'"';
 $query= $conn->prepare($sql);
 $query->execute($data);
-}
+}}
 $query = $conn->prepare('SELECT email FROM users WHERE username = "'.$_SESSION['username'].'"');
 //$query->bindValue(':username', $userame, PDO::PARAM_STRING);
 $query->execute();
@@ -26,12 +31,18 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC))
 {
     $email = $row['email'];
 }
-
+            //Change username
 //we123123123123123123123123123123123123123123
 //12312312312312312312312312312312312312312312
 //12312312312312312312312312312312312312312312
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_POST['Submit1'])) {
 if (isset( $_POST['username'] )){
+
+$stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE username=?");
+$stmt->execute(array($username));
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+$username_count = $row["count"];
+}
 
 $data = [
 
@@ -52,6 +63,44 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC))
     $username = $row['username'];
 }
 }
+            //Change password
+//we123123123123123123123123123123123123123123
+//12312312312312312312312312312312312312312312
+//12312312312312312312312312312312312312312312
+
+if (isset($_POST['Submit2'])) {
+if (isset( $_POST['password'] , $_POST['password_repeat'])){
+
+
+  $password = $_POST['password'];
+  $password_repeat = $_POST['password_repeat'];
+  $passwordlength= strlen($password);
+
+  if ($password != $password_repeat)
+  {
+    echo "Password doesnt match";
+  }
+  elseif ($passwordlength <6) {
+echo "password must be longer than 6";
+  }
+
+
+  else{
+
+
+$salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+$hashed = hash('sha512', $salted);
+
+$sql = 'UPDATE users SET password=:password WHERE username = "'.$_SESSION['username'].'"';
+
+$query= $conn->prepare($sql);
+$query->bindParam(':password', $hashed, PDO::PARAM_STR);
+$query->execute();
+}
+}}
+//we123123123123123123123123123123123123123123
+//12312312312312312312312312312312312312312312
+//12312312312312312312312312312312312312312312
  ?>
 
 
@@ -102,7 +151,7 @@ Edit profile
         <li><p class="edit_profile_body_text">Email</p></li>
         <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo $email; ?>" ></li> <br><br>
       </ul>
-        <button  class="submit" type="submit" name="button" >Update</button>
+        <button  class="submit" type="submit" name="Submit1" >Update</button>
         <p style="text-align:center;">*changing this will log you out</p>
       </form>
         </div>
@@ -123,7 +172,7 @@ Edit profile
         <li> <p class="edit_profile_body_text">Repeat password</p></li>
           <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
            <br><br></ul>
-            <button  class="submit" type="submit" name="button" >Update</button>
+            <button  class="submit" type="submit" name="Submit2" >Update</button>
           </form>
         </div>
           <!-- Endo password erea --->
@@ -143,7 +192,7 @@ Edit profile
           <li> <p class="edit_profile_body_text">Repeat password</p></li>
             <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
              <br><br></ul>
-              <button  class="submit" type="submit" name="button" >Update</button>
+              <button  class="submit" type="submit" name="update" >Update</button>
             </form>
           </div>
             <!-- Endo password erea --->

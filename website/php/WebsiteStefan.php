@@ -1,8 +1,6 @@
 <?php
-//error_reporting(0);
-//ini_set('display_errors', 0);
 require('connect.php');
-
+require('header.php');
 // Simon // make sure user is logged in needed every page!
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
@@ -75,10 +73,6 @@ if (!$_SESSION['username']) {
 Het gebruik van sociale netwerken is gestegen van 53 procent in 2011 naar 57 procent in 2012. Ook het gebruik van professionele netwerken zoals LinkedIn is in deze periode toegenomen, namelijk van 20 procent naar 23 procent.
 Het CBS heeft nieuwe cijfers over het gebruik van sociale media in Nederland gepubliceerd. Hieruit blijkt dat ongeveer zeven op de tien Nederlandse internetgebruikers van 12 jaar en ouder in 2012 gebruikmaakten van sociale media. De meest voorkomende vorm is, niet heel verrassend, deelname aan sociale netwerken zoals Facebook of Twitter (56 procent van de internetgebruikers). Daarna volgen instant messaging (35 procent) en het plaatsen van berichten op chatsites (30 procent). Ruim een op de vijf internetters (22 procent) is actief met bloggen en eenzelfde aantal gebruikt professionele sociale netwerken.
 
-Het gebruik van sociale netwerken is gestegen van 53 procent in 2011 naar 57 procent in 2012. Ook het gebruik van professionele netwerken zoals LinkedIn is in deze periode toegenomen, namelijk van 20 procent naar 23 procent.
-Het CBS heeft nieuwe cijfers over het gebruik van sociale media in Nederland gepubliceerd. Hieruit blijkt dat ongeveer zeven op de tien Nederlandse internetgebruikers van 12 jaar en ouder in 2012 gebruikmaakten van sociale media. De meest voorkomende vorm is, niet heel verrassend, deelname aan sociale netwerken zoals Facebook of Twitter (56 procent van de internetgebruikers). Daarna volgen instant messaging (35 procent) en het plaatsen van berichten op chatsites (30 procent). Ruim een op de vijf internetters (22 procent) is actief met bloggen en eenzelfde aantal gebruikt professionele sociale netwerken.
-
-Het gebruik van sociale netwerken is gestegen van 53 procent in 2011 naar 57 procent in 2012. Ook het gebruik van professionele netwerken zoals LinkedIn is in deze periode toegenomen, namelijk van 20 procent naar 23 procent.
 </p>
 </div>
 

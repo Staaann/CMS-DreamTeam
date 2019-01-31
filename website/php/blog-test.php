@@ -7,7 +7,7 @@ if (isset( $_POST['tekst'])){
       $query = $conn->prepare($sql);
       $query->bindParam(':tekst', $tekst, PDO::PARAM_STR);
       $query->execute();
-      echo "gay";
+      echo "";
      }
 
 
@@ -16,8 +16,8 @@ if (isset( $_POST['tekst'])){
 
       $tekst = $getdata->fetch();
       echo $tekst;
-       
-?>
+
+     ?>
 
 
 
@@ -35,23 +35,32 @@ if (isset( $_POST['tekst'])){
 </head>
 
 <body>
-  <div class="header">
-      <p>DreamTeam</p>
-  </div>
  
   <div class="wrapper">
 
-  <form method="post" action="blog-test.php" class="tekst">
-    <textarea name="tekst" id="mytextarea"></textarea>
-    <button  class="submit" type="submit" name="button" >Test</button>
-  </form>
-
-
-
-    <div class="tekstvak1">
-     <?php 
-     ?> 
+    <div class="header-stefan">
+      <?php
+           require('header.php');
+      ?>
     </div>
+
+    <div class="leeg">
+      <p> </p>
+    </div>
+
+   
+            <form method="post" action="blog-test.php" class="tinymce">
+                  <textarea name="tekst" id="mytextarea"></textarea>
+                  <button  class="submit" type="submit" name="button" >Test</button>
+                             <a class="massege" href="viewpages.php">View pages</a>
+            </form>
+ 
+
+    <div class="footer">
+      <p> Footer </p>
+    </div>
+
+
 
     <!-- adasd -->
             <a class="massege" href="viewpages.php">View pages</a>

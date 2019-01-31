@@ -28,12 +28,12 @@
 				<input type="hidden" name="selector" value="<?php echo $selector ?>">
 				<input type="hidden" name="validator" value="<?php echo $validator ?>">
 
-				<input class="formulierwachtwoord" type="password" name="password" placeholder="new password" required>
+				<input class="formulierwachtwoord" type="password" name="ww" placeholder="new password" required>
 				<br>
-				<input class="formulierwachtwoord" type="password" name="password" placeholder="repeat password"
+				<input class="formulierwachtwoord" type="password" name="ww-repeat" placeholder="repeat password"
 		 			required>
 				<br>
-				<input class="loginknop " type="submit"  value ="confirm">
+				<input class="loginknop " name="reset-ww-knop" type="submit"  value ="confirm">
 
 			</form>
 		

@@ -9,17 +9,26 @@ html{
 }
 
 .header-stefan{
-  grid-row-start:1;
-  grid-row-end:3;	
+ grid-row: 1;	
 }
 .tinymce{
-	grid-row-start:3;
+	padding: 100px;
+	grid-row:2;
 	grid-column-start:2;
 }
 .leeg{
+	grid-column-start:1; 
+	grid-column-end:3;
 	grid-row-start:2;
+	grid-row-end: 5;
 }
-
+.page{
+	text-align: center;
+	padding: 0% 15%;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 4px;
+}
 
 
 

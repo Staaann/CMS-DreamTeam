@@ -52,6 +52,7 @@ if (isset( $_POST['tekst'])){
             <form method="post" action="blog-test.php" class="tinymce">
                   <textarea name="tekst" id="mytextarea"></textarea>
                   <button  class="submit" type="submit" name="button" >Test</button>
+                             <a class="massege" href="viewpages.php">View pages</a>
             </form>
  
 

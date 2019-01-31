@@ -18,13 +18,12 @@
 	<div>
 		<form action="php-ResetRequest.php" method="post">
 
-  			<input class="formulieremail" type="email" placeholder="email" name="email" required>
+  			<input class="formulieremail" type="email1" placeholder="email" name="email" required>
   				<br >
  			<input class="loginknop " type="submit" name="reset-reques-submit" value ="send">
  			<input class="loginknop" type="button" onclick="location.href='./index.php';" value="login" />
 
 		</form>
-
 
 	</div>
 </div>

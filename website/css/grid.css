@@ -8,31 +8,38 @@ html{
   grid-gap: 0em;
 }
 
-.header{
- grid-column-start: 1;
- grid-column-start: 3;
- background-color: 	black;
- padding-top: 100px;
- color: white;
- font-size: 47px;
- letter-spacing: 1px;
- text-align: center;
+.header-stefan{
+ grid-row: 1;	
+}
+.tinymce{
+	padding: 100px;
+	grid-row:2;
+	grid-column-start:2;
+}
+.leeg{
+	grid-column-start:1; 
+	grid-column-end:3;
+	grid-row-start:2;
+	grid-row-end: 5;
+}
+.page{
+	text-align: center;
+	padding: 0% 15%;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 4px;
 }
 
-.tekst{
-  grid-column-start: 2;
- }
+.test123{
+	padding-top:150px;
+	text-align: center;
+	border-width:10px;
+	border-style:solid;
+	border-radius:10px;
 
- .tekstvak1{
-  grid-column-start: 2;
-   grid-row-start: 3;
 
 
-}
-
-.massege{
-grid-row-start : 2;		
-
+	
 }
 
 

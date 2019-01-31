@@ -28,18 +28,10 @@ if (!$_SESSION['username']) {
 
 <br>
 
-<div>
-      <p>
-        <a href="logout.php" class="logout logoutHov">
-           Log out
-        </a> 
-            <?php
-            //simon
-            echo "Welcome ";
-            echo  $_SESSION['username'];
-            ?>
-      </p>
-    </div>
+<br>
+<br>
+<br>
+<br>
 
     <div class="in1">
     <div class="content">

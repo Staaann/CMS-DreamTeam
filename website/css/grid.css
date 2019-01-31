@@ -8,32 +8,17 @@ html{
   grid-gap: 0em;
 }
 
-.header{
- grid-column-start: 1;
- grid-column-start: 3;
- background-color: 	black;
- padding-top: 100px;
- color: white;
- font-size: 47px;
- letter-spacing: 1px;
- text-align: center;
+.test{
+  grid-row-start:1;
+  grid-row-end:5;	
 }
-
 .tekst{
   grid-column-start: 2;
- }
-
- .tekstvak1{
-  grid-column-start: 2;
-   grid-row-start: 3;
-
-
+  grid-row-start:2;
+  grid-row-end:5;
 }
 
-.massege{
-grid-row-start : 2;		
 
-}
 
 
 

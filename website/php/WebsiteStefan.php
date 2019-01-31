@@ -1,8 +1,6 @@
 <?php
-//error_reporting(0);
-//ini_set('display_errors', 0);
 require('connect.php');
-
+require('header.php');
 // Simon // make sure user is logged in needed every page!
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";
@@ -24,28 +22,10 @@ if (!$_SESSION['username']) {
     <link rel="stylesheet" type="text/css" href="../css/index.css">
   </head>
   <body>
- <div class="header">
-
-  <h1 class="site-title">DreamTeam</h1>
-<div class="UserProfileName">
-
-<nav id="menu">
-<ul>
-  <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="#">Home</a></li>
-  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Portfolio</a></li>
-  <li><a class="<?php echo ($page_name=='blog-index.php')?'active':'';?>" href="blog-stan.php">Blog</a></li>
-  <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
-  <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
-</ul>
-</nav>
-
-</form>
-</ul>
 
 </body>
  
-  </div>
-</div>
+
 <br>
 
 <div>

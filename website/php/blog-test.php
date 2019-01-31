@@ -1,5 +1,4 @@
 <?php 
-  session_start();
 require('connect.php');
 if (isset( $_POST['tekst'])){
 	$tekst = $_POST['tekst'];
@@ -17,8 +16,8 @@ if (isset( $_POST['tekst'])){
 
       $tekst = $getdata->fetch();
       echo $tekst;
-       
-?>
+
+     ?>
 
 
 
@@ -36,9 +35,6 @@ if (isset( $_POST['tekst'])){
 </head>
 
 <body>
-  <div class="header">
-      <p>DreamTeam</p>
-  </div>
  
   <div class="wrapper">
 
@@ -48,13 +44,10 @@ if (isset( $_POST['tekst'])){
   </form>
 
 
-
-    <div class="tekstvak1">
-
-     <?php
-     require('viewpages.php'); 
-     ?> 
-     
+    <div class="Test">
+      <?php
+           require('header.php');
+           ?>
     </div>
 
     <!-- adasd -->

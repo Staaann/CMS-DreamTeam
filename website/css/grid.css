@@ -8,15 +8,18 @@ html{
   grid-gap: 0em;
 }
 
-.test{
+.header-stefan{
   grid-row-start:1;
-  grid-row-end:5;	
+  grid-row-end:3;	
 }
-.tekst{
-  grid-column-start: 2;
-  grid-row-start:2;
-  grid-row-end:5;
+.tinymce{
+	grid-row-start:3;
+	grid-column-start:2;
 }
+.leeg{
+	grid-row-start:2;
+}
+
 
 .test123{
 	padding-top:150px;
@@ -24,7 +27,6 @@ html{
 	border-width:10px;
 	border-style:solid;
 	border-radius:10px;
-	brigh
 
 
 

@@ -1,5 +1,18 @@
 <?php 
+require('connect.php');
 
+// Simon // make sure user is logged in needed every page!
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    header("location: index.php");
+    exit();
+
+}
+
+  $full_name = $_SERVER['PHP_SELF'];
+  $name_array = explode('/',$full_name);
+  $count = count($name_array);
+  $page_name = $name_array[$count-1];
 ?>
 
 <!DOCTYPE html>

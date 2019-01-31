@@ -1,6 +1,7 @@
   <?php
 
  	require('connect.php');
+
  				//pak de data van het formulier
 				if (isset( $_POST['username'] , $_POST['password'] ))
 				{
@@ -12,26 +13,32 @@
 				    //password hashing
 				    $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
                     $hashed = hash('sha512', $salted);
+
                 //check if the username and password is empty
 				if(empty($username) || empty($password)) {
 				    $messeg = "Username/Password can't be empty";
 				    echo $messeg;
+
 				    //pak de data van de database en vergelijk het
+
 				} else {
 				    $sql = "SELECT username, password FROM users WHERE username=? AND password=? ";
 				    $query = $conn->prepare($sql);
 				    $query->execute(array($username,$hashed));
 				    //pak de data
+
 				    if($query->rowCount() >= 1) {
 
-				        header("location: WebsiteStefan.php");
+				    var_dump($query);
+				    
 				    //als het fout is geef de errror
+				    
 				    } else {
 				        $messeg = "Username/Password is wrong";
 				        echo $messeg;
 				    }
 				}
-
+				        header("location: WebsiteStefan.php");
 				}
 
 ?>

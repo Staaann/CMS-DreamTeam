@@ -2,6 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+$dbname="cms2";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

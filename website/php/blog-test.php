@@ -26,10 +26,12 @@ if (isset( $_POST['tekst'])){
 <html>
 <head>
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=5xpfjku55046lllgrobb2m0ru86f3gov7egzz8bru5ozabm4"></script>
-  
+
   <script>
   tinymce.init({
-    selector: '#mytextarea'
+    selector: '#mytextarea',
+    height: 750,
+
   });
   </script>
   <link rel="stylesheet" type="text/css" href="../css/grid.css">

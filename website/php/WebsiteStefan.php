@@ -13,6 +13,16 @@ if (!$_SESSION['username']) {
   $name_array = explode('/',$full_name);
   $count = count($name_array);
   $page_name = $name_array[$count-1];
+
+
+  $query = $conn->prepare('SELECT image FROM users WHERE username = "'.$_SESSION['username'].'"');
+  //$query->bindValue(':username', $userame, PDO::PARAM_STRING);
+  $query->execute();
+
+  while ($row = $query->fetch(PDO::FETCH_ASSOC))
+  {
+      $image = $row['image'];
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +33,7 @@ if (!$_SESSION['username']) {
   </head>
   <body>
  <div class="header">
-   
+
   <h1 class="site-title">DreamTeam</h1>
 <div class="UserProfileName">
 
@@ -48,6 +58,7 @@ if (!$_SESSION['username']) {
 
 <div>
       <p>
+        
         <a href="logout.php" class="logout logoutHov">
            Log out
         </a>

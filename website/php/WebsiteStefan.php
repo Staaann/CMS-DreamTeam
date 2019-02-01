@@ -15,14 +15,7 @@ if (!$_SESSION['username']) {
   $page_name = $name_array[$count-1];
 
 
-  $query = $conn->prepare('SELECT image FROM users WHERE username = "'.$_SESSION['username'].'"');
-  //$query->bindValue(':username', $userame, PDO::PARAM_STRING);
-  $query->execute();
 
-  while ($row = $query->fetch(PDO::FETCH_ASSOC))
-  {
-      $image = $row['image'];
-  }
 ?>
 <!DOCTYPE html>
 <html>

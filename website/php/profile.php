@@ -101,6 +101,14 @@ $query->execute();
 //we123123123123123123123123123123123123123123
 //12312312312312312312312312312312312312312312
 //12312312312312312312312312312312312312312312
+$query = $conn->prepare('SELECT image FROM users WHERE username = "'.$_SESSION['username'].'"');
+//$query->bindValue(':username', $userame, PDO::PARAM_STRING);
+$query->execute();
+
+while ($row = $query->fetch(PDO::FETCH_ASSOC))
+{
+    $image = $row['image'];
+}
  ?>
 
 
@@ -182,20 +190,15 @@ Edit profile
         </div>
           <div class="edit_profile_body">
             <br>
-            <form action="#" method="post">
-              <ul>
-                <li><p class="edit_profile_body_text">New password</p></li>
-                <li><input class="edit_profile_vakjes" type="password" name="password"  placeholder="Password" required ></li>
-              <br>
-            </ul>
-            <ul>
-          <li> <p class="edit_profile_body_text">Repeat password</p></li>
-            <li> <input class="edit_profile_vakjes" type="password" name="password_repeat"  placeholder="Repeat password" required></li>
-             <br><br></ul>
-              <button  class="submit" type="submit" name="update" >Update</button>
-            </form>
+              <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <p style="text-align:center; padding-bottom:5px;">Select Profile picture:</p><br>
+                    <p style="text-align:center;"><input type="file" name="fileToUpload" id="fileToUpload"></p><br>
+                  <button  class="submit" type="submit" value="Upload Image" name="submit3" >Update</button>
+              </form>
           </div>
-            <!-- Endo password erea --->
+            <!-- Endo password erea//////https://www.w3schools.com/php/php_file_upload.asp --->
+            <p>Current profile picture <br>
+            <img  src="<?php echo $image; ?>" height='130' width='150'" alt=""" ></p>
 
 
   </div>

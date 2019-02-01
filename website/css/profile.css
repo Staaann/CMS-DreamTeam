@@ -122,6 +122,10 @@ border-radius: 5px;
 border: 1px solid rgb(42, 112, 224) ;
 color: white;
 }
+.ProfilePicture{
+  width: 300px;
+  height: 337px;
+}
 
 
 /*reponseive*/

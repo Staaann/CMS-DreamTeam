@@ -23,7 +23,7 @@ if (!$_SESSION['username']) {
   </head>
   <body>
  <div class="header">
-
+   
   <h1 class="site-title">DreamTeam</h1>
 <div class="UserProfileName">
 

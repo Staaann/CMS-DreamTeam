@@ -1,6 +1,7 @@
 <?php
 
 require ('connect.php');
+//require ('header.php');
 
 $pages = $conn->query("SELECT id, tekst FROM blog")->fetchAll(PDO::FETCH_ASSOC);
 foreach ($pages as $page) {
@@ -8,16 +9,20 @@ foreach ($pages as $page) {
 	$idk = $page['id'];
 	$posts = $page['id'];
 	$tekst = $page['tekst'];
-	//echo $id;
+	//print_r($pages);
 	echo "<br>";
 }
-	$new = $id / 2;
-	echo $new;
+
+foreach ($pages as $entry) {
+   if ($entry->id == 4) 
+      echo $entry;
+}
+
 	$idk = $idk - 2;
 	echo $idk;
 
 
-//require ('header.php');
+
 
 ?>
 
@@ -52,12 +57,13 @@ foreach ($pages as $page) {
 			<div class="page">
 				<?php  
 
-						$count = 0;
+						/*$count = 0;
 						$page_number = 0;
 						
 						foreach($pages as $page){
-							echo $page['id'];
+							
 						echo $page['tekst'];
+						echo $page['id'];
 						//echo $page['id'];
 						$page_number = $page['id'] / 2;
 						$count ++;
@@ -70,20 +76,11 @@ foreach ($pages as $page) {
 
 						}
 							  if (isset($_POST["1"])){
-							  echo "1";
-							  						foreach($pages as $page){
-													echo $page['tekst'];
-													//echo $page['id'];
-													echo $page['id'];
-													$count = 0;
-													$count ++;
-													if($count == 2){
-														break;
-
-													}
-
-
-													}
+							  echo "string";
+							  if ($id == 3 ) {
+							  	echo $tekst;
+							  	
+							}					
 
 							} if (isset($_POST["2"])){
 							  if ($posts > 2) {
@@ -94,7 +91,7 @@ foreach ($pages as $page) {
 							  echo "3";
 							} if (isset($_POST["4"])){
 							  echo ">>";
-							} 					
+							} 	*/				
 				?>
 				  <form method="post">
                   <input type="submit" id="1" name="1" onclick="amyFunction1()" value="1" />

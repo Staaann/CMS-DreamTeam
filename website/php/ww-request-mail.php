@@ -1,9 +1,9 @@
 <?php
+
  if (isset($_POST['email'])) {
  	require ('connect.php');
 
   	$email = $_POST['email'];
-
 		$stmt = $conn->prepare("SELECT `email` FROM `users`");
         $stmt->execute(array($email) );
       
@@ -31,8 +31,13 @@
 		$token= str_shuffle($token);
 		$token= substr($token, 0, 10 );
 
+
+
 		$conn-> query("UPDATE users SET token='$token'");	
 		echo "Check you'er email inbox";
+
+
+		
 
 	  }
   else{
@@ -79,7 +84,7 @@
 	<div class="loginplekbg">
 		<h1 class="h1">wachtwoord vergeten</h1>
 	<div>
-		<form action="ww-request-mail.php" method="post">
+		<form action="" method="post">
 
   			<input class="formulieremail" id="email" type="email" placeholder="email" name="email" required>
   				<br >

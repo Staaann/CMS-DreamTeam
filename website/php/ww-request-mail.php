@@ -1,5 +1,6 @@
 <?php
 
+
  if (isset($_POST['email'])) {
  	require ('connect.php');
 
@@ -37,7 +38,74 @@
 		echo "Check you'er email inbox";
 
 
+
+			/**
+			 * This example shows settings to use when sending via Google's Gmail servers.
+			 * The IMAP section shows how to save this message to the 'Sent Mail' folder using IMAP commands.
+			 */
+
+			//SMTP needs accurate times, and the PHP time zone MUST be set
+			//This should be done in your php.ini, but this is how to do it if you don't have access to that
+			date_default_timezone_set('Etc/UTC');
+
+			require 'PHPMailer/PHPMailerAutoload.php';
+
+			//Create a new PHPMailer instance
+			$mail = new PHPMailer;
+			$mail->isSMTP();
+			$mail->SMTPDebug = 0;
+			$mail->Debugoutput = 'html';
+
 		
+			$mail->Host = 'smtp.gmail.com';
+			
+			$mail->Port = 587;
+			$mail->SMTPSecure = 'tls';
+			$mail->SMTPAuth = true;
+
+
+			$mail->Username = "officialdreamteam26@gmail.com";
+
+
+			$mail->Password = "jonathanisdeman";
+
+			$mail->setFrom('officialdreamteam26@gmail.com', 'DreamTeam');
+
+			$mail->addReplyTo('officialdreamteam26@gmail.com', 'Jonathan Tsegaye');
+
+	
+			$mail->addAddress($email);
+
+
+			$mail->Subject = 'Change your password';
+
+
+			$mail->msgHTML('<!DOCTYPE html><html><body><p>hoi dit is een test</p></body></html>');
+
+
+			$mail->AltBody = '<body><p>hoi dit is een test </p></body>';
+
+
+			if (!$mail->send()) {
+			    echo "Mailer Error: " . $mail->ErrorInfo;
+			} else {
+			    echo "Message sent!";
+
+			}
+
+			function save_mail($mail) {
+
+			    $path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
+
+	
+			    $imapStream = imap_open($path, $mail->Username, $mail->Password);
+
+			    $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
+			    imap_close($imapStream);
+
+			    return $result;
+			}
+					
 
 	  }
   else{

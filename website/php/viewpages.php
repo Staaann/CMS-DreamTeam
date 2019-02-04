@@ -1,26 +1,23 @@
 <?php
 
 require ('connect.php');
-//require ('header.php');
+require ('header.php');
 
 $pages = $conn->query("SELECT id, tekst FROM blog")->fetchAll(PDO::FETCH_ASSOC);
+
+//laat de id zien
+
 foreach ($pages as $page) {
+
 	$id = $page['id'];
-	$idk = $page['id'];
-	$posts = $page['id'];
-	$tekst = $page['tekst'];
-	//print_r($pages);
+	//$posts = $page['id'];
+	//$tekst = $page['tekst'];
+	echo ($id);
 	echo "<br>";
 }
 
-foreach ($pages as $entry) {
-   if ($entry->id == 4) 
-      echo $entry;
-}
-
-	$idk = $idk - 2;
-	echo $idk;
-
+	$id = $id - 2;
+	echo $id;
 
 
 
@@ -57,14 +54,12 @@ foreach ($pages as $entry) {
 			<div class="page">
 				<?php  
 
-						/*$count = 0;
+						$count = 0;
 						$page_number = 0;
 						
 						foreach($pages as $page){
-							
+						//laat maar 2 zien
 						echo $page['tekst'];
-						echo $page['id'];
-						//echo $page['id'];
 						$page_number = $page['id'] / 2;
 						$count ++;
 
@@ -91,7 +86,7 @@ foreach ($pages as $entry) {
 							  echo "3";
 							} if (isset($_POST["4"])){
 							  echo ">>";
-							} 	*/				
+							} 					
 				?>
 				  <form method="post">
                   <input type="submit" id="1" name="1" onclick="amyFunction1()" value="1" />

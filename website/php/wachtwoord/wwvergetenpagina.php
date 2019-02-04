@@ -1,3 +1,28 @@
+<?php
+    require('connect.php');
+
+    sql = $conn->query("SELECT id FROM users WHERE email='$email'");
+
+            if (isset( $_POST['password'] , $_POST['password_repeat'])){
+
+          $newpassword = $_POST['password'];
+          $newpassword_repeat = $_POST['password_repeat'];
+
+          $conn-> query( "UPDATE users SET newpassword='$password'" );
+
+
+);
+
+
+}else{
+	stuurnaardeloginpagina();
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

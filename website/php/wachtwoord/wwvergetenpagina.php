@@ -6,33 +6,28 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
 	$password = $_POST['password'];
 	$password_repeat = $_POST['password_repeat'];
 
-	$stmt = $conn->prepare("SELECT `email` FROM `users`");
-        $stmt->execute(array($email) );
-        echo $stmt;
-
 	if($password === $password_repeat){
 		
           $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
           $hashed = hash('sha512', $salted);
 
-	
-		//$sql = 'UPDATE users SET password=? WHERE username=?';
+
 		$query= $conn->prepare($sql);
 
 		$query->bindParam(':password', $hashed, PDO::PARAM_STR);
 		$query->execute();
 
-		$sql = 'UPDATE users SET password=$password WHERE email = ';
 		$success_massage = "password reset successfull!";
 		header('refresh:3; url: ../index.php');
 
+		$sql = 'UPDATE users SET password=$password WHERE email = ';
 		} else {
 			$error_massage= "Password rest failed!";
 		}
 
 	}else {
 		$error_massage= "Password doesn't match";
-	}
+	}}
 
 ?>
 

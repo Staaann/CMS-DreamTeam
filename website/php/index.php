@@ -16,8 +16,9 @@
 
                 //check if the username and password is empty
 				if(empty($username) || empty($password)) {
-				    $messeg = "Username/Password can't be empty";
-				    echo $messeg;
+				    echo "<script>
+				      alert('Username/Password can't be empty');
+				      </script>";
 
 				    //pak de data van de database en vergelijk het
 
@@ -33,8 +34,9 @@
 				    //als het fout is geef de errror
 				    
 				    } else {
-				        $messeg = "Username/Password is wrong";
-				        echo $messeg;
+				       echo "<script>
+					      alert('Username/Password is wrong');
+					      </script>";
 				    }
 				}
 

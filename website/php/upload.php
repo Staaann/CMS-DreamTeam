@@ -38,7 +38,8 @@ if ($uploadOk == 0) {
       $sql = 'UPDATE users SET image= "'.$target_file.'" WHERE username = "'.$_SESSION['username'].'"';
       $query= $conn->prepare($sql);
       $query->execute();
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+header("location: profile.php");
+
     } else {
         echo "Sorry, there was an error uploading your file.";
     }

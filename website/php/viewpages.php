@@ -2,6 +2,13 @@
 
 require ('connect.php');
 require ('header.php');
+// Simon // make sure user is logged in needed every page!
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    header("location: index.php");
+    exit();
+
+}
 
 $pages = $conn->query("SELECT id, tekst FROM blog")->fetchAll(PDO::FETCH_ASSOC);
 
@@ -50,13 +57,13 @@ foreach ($pages as $page) {
 	</script>
 </head>
 <body>
-	<div class="cont">		
+	<div class="cont">
 			<div class="page">
-				<?php  
+				<?php
 
 						$count = 0;
 						$page_number = 0;
-						
+
 						foreach($pages as $page){
 						//laat maar 2 zien
 						echo $page['tekst'];
@@ -65,7 +72,7 @@ foreach ($pages as $page) {
 
 						if($count == 2){
 							break;
-						
+
 						}
 
 
@@ -74,8 +81,8 @@ foreach ($pages as $page) {
 							  echo "string";
 							  if ($id == 3 ) {
 							  	echo $tekst;
-							  	
-							}					
+
+							}
 
 							} if (isset($_POST["2"])){
 							  if ($posts > 2) {
@@ -86,7 +93,7 @@ foreach ($pages as $page) {
 							  echo "3";
 							} if (isset($_POST["4"])){
 							  echo ">>";
-							} 					
+							}
 				?>
 				  <form method="post">
                   <input type="submit" id="1" name="1" onclick="amyFunction1()" value="1" />

@@ -1,6 +1,7 @@
 <?php
     require('../connect.php');
- 
+
+
 
 if (isset( $_POST['password'] , $_POST['password_repeat'])){
 	$password = $_POST['password'];
@@ -22,7 +23,7 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
 			echo "<script>
 			alert('Password Updated');
 			</script>";
-    		
+
 		header('refresh:0;../index.php');
 
 
@@ -42,7 +43,7 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
 </head>
 <body>
 
-	
+
 	<div class="grijzevlakte">
 
 		<h1 class="h1">Make a new password</h1>

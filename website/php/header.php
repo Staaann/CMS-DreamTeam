@@ -63,10 +63,10 @@ if (!$_SESSION['username']) {
             ?>
       </p>
     </div>
-                      <div  style="float: left; margin: 2px 1150px ; position: fixed; top: 36px; right:205px; border: 5px;">
+                      <div  style="float: left; margin: -30px 115px ; position: fixed; top: 36px; right:205px; border: 5px;">
 
 
-    <img class="ProfilePicHok"  src="<?php echo $image; ?>" height='70' width='90'" >
+    <img class="ProfilePicHok"  src="<?php echo $image; ?>" height='130' width='130'" >
                       </div>
   </div>
 </div>

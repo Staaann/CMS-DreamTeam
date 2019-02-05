@@ -24,32 +24,46 @@
     $username_count = $row["count"];
   }
   if ($username_count AND $email_count > 0) {
-    echo "That username and email is already in use";
+    
+    echo "<script>
+      alert('That username and email is already in use');
+      </script>";
   }
 
   elseif  ($email_count > 0) {
-    echo "That email address is already in use";
+    echo "<script>
+      alert('That email address is already in use');
+      </script>";
   }
 
   elseif ($username_count > 0) {
-    echo "That username is already in use";
+    echo "<script>
+      alert('That username is already in use');
+      </script>";
   }
 
     elseif ($passwordlength <6) {
-  echo "password must be longer than 6";
+  echo "<script>
+      alert('password must be longer than 6');
+      </script>";
     }//einde simon
 
 
 
           elseif ($password != $password_repeat)
           {
-            echo "Password doesnt match";
+            echo "<script>
+      alert('Password doesnt match');
+      </script>";
           }
 
           else{
 
-          if ($password != $password_repeat) {
-            echo "Password doesnt match";
+          if ($password != $password_repeat){
+            echo "<script>
+          }
+      alert('Password doesnt match');
+      </script>";
             }
 
               else{

@@ -1,5 +1,13 @@
 <?php
+
 require('connect.php');
+// Simon // make sure user is logged in needed every page!
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    header("location: index.php");
+    exit();
+
+}
 if (isset( $_POST['tekst'])){
 	$tekst = $_POST['tekst'];
 

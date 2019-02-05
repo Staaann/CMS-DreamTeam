@@ -25,6 +25,10 @@ if (!$_SESSION['username']) {
   {
       $image = $row['image'];
   }
+
+  //if (image) {
+    // code...
+  //}
 ?>
 
 <!DOCTYPE html>

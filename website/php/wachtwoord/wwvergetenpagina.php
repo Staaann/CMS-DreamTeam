@@ -1,5 +1,10 @@
 <?php
     require('../connect.php');
+    		// laat de emails zien
+
+    		$emails = $conn->query("SELECT email FROM users")->fetchAll(PDO::FETCH_ASSOC);
+			// print de emails maar je doet print_r omdat het een array is en als je echo doet krijg je een error die zegt array to string converstion ofzo!
+			print_r($emails);
 if (isset($_POST['confirm'])) {
 if (isset( $_POST['password'] , $_POST['password_repeat'])){
 
@@ -12,7 +17,9 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
           $hashed = hash('sha512', $salted);
 
 
+
 		$query= $conn->prepare($sql);
+		$sql = 'UPDATE users SET password=$password WHERE email = ';
 
 		$query->bindParam(':password', $hashed, PDO::PARAM_STR);
 		$query->execute();
@@ -20,7 +27,7 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
 		$success_massage = "password reset successfull!";
 		header('refresh:3; url: ../index.php');
 
-		$sql = 'UPDATE users SET password=$password WHERE email = ';
+
 		} else {
 			$error_massage= "Password rest failed!";
 		}

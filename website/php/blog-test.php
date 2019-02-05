@@ -30,7 +30,8 @@ if (isset( $_POST['tekst'])){
   <script>
   tinymce.init({
     selector: '#mytextarea',
-    height: 750,
+    height: 600,
+
 
   });
   </script>
@@ -60,13 +61,13 @@ if (isset( $_POST['tekst'])){
 
 
     <div class="footer">
-      <p> Footer </p>
+
     </div>
 
 
 
     <!-- adasd -->
-            <a class="massege" href="viewpages.php">View pages</a>
+
 </div>
 </body>
 </html>

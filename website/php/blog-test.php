@@ -30,7 +30,7 @@ if (isset( $_POST['tekst'])){
   <script>
   tinymce.init({
     selector: '#mytextarea',
-    height: 750,
+    height: 650,
 
   });
   </script>

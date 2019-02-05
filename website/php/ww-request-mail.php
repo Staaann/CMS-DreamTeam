@@ -3,6 +3,7 @@
 
  if (isset($_POST['email'])) {
  	require ('connect.php');
+ 	
 
 
   	$email = $_POST['email'];
@@ -11,21 +12,22 @@
       
 
 
-    	$stmt = $conn->prepare("SELECT COUNT(*) AS count FROM `users` WHERE email=?");
+    	$stmt = $conn->prepare ("SELECT COUNT(*) AS count FROM `users` WHERE email=?");
       $stmt->execute(array($email));
+
       while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $email_count = $row["count"];
        if ($email_count > 0) {
 
 
-	  $token= "hdsajkaljdk12jndwadn298eTFG89";
-		$token= str_shuffle($token);
-		$token= substr($token, 0, 10);
+	 			$token= "hdsajkaljdk12jndwadn298eTFG89";
+				$token= str_shuffle($token);
+				$token= substr($token, 0, 10);
+				$url = "http://localhost/CMS-DreamTeam/website/php/wachtwoord/wwvergetenpagina.php?token=$token&email=$email";
 
-
-
-		$conn-> query("UPDATE users SET token='$token'");	
-		echo "Check you'er email inbox";
+	
+		$conn-> query("UPDATE users SET token='$token' WHERE email ='$email' ");	
+		echo "Check your email inbox";
 
 
 			date_default_timezone_set('Etc/UTC');
@@ -61,7 +63,7 @@
 			$mail->Subject = 'Change your password';
 
 
-		$mail->msgHTML(file_get_contents('emailgebruiker.php'), dirname(__FILE__));
+		$mail->msgHTML("Click on this link below to change your password: $url");
 
 
 
@@ -73,13 +75,11 @@
 			}
 
 		
-					
 
 	  }
   else{
   	echo"email doesn't exit!";
   	  }
-
     	}
 
 } 
@@ -100,7 +100,7 @@
 
 <body>
 	<div class="loginplekbg">
-		<h1 class="h1">Forgot Password<`n/h1>
+		<h1 class="h1">Forgot Password</h1>
 	<div>
 		<form action="" method="post">
 

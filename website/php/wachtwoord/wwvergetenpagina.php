@@ -1,24 +1,38 @@
 <?php
-    require('connect.php');
+    require('../connect.php');
+if (isset($_POST['confirm'])) {
+if (isset( $_POST['password'] , $_POST['password_repeat'])){
 
-    sql = $conn->query("SELECT id FROM users WHERE email='$email'");
+	$password = $_POST['password'];
+	$password_repeat = $_POST['password_repeat'];
 
-            if (isset( $_POST['password'] , $_POST['password_repeat'])){
+	$stmt = $conn->prepare("SELECT `email` FROM `users`");
+        $stmt->execute(array($email) );
+        echo $stmt;
 
-          $newpassword = $_POST['password'];
-          $newpassword_repeat = $_POST['password_repeat'];
+	if($password === $password_repeat){
+		
+          $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+          $hashed = hash('sha512', $salted);
 
-          $conn-> query( "UPDATE users SET newpassword='$password'" );
+	
+		//$sql = 'UPDATE users SET password=? WHERE username=?';
+		$query= $conn->prepare($sql);
 
+		$query->bindParam(':password', $hashed, PDO::PARAM_STR);
+		$query->execute();
 
-);
+		$sql = 'UPDATE users SET password=$password WHERE email = ';
+		$success_massage = "password reset successfull!";
+		header('refresh:3; url: ../index.php');
 
+		} else {
+			$error_massage= "Password rest failed!";
+		}
 
-}else{
-	stuurnaardeloginpagina();
-}
-
-
+	}else {
+		$error_massage= "Password doesn't match";
+	}
 
 ?>
 
@@ -40,11 +54,11 @@
 
 		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="new password" required>
 		<br>
-		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="repeat password"
+		<input class="formulierwachtwoordvergeten" type="password" name="password_repeat" placeholder="repeat password"
 		 required>
 		<br>
-		<input class="confirmknop " type="submit"  value ="confirm">
-		
+		<input class="confirmknop " id="confirm" name="confirm" type="submit"  value ="confirm">
+
 		</form>
 
 	</div>

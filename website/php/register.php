@@ -40,7 +40,7 @@
     }//einde simon
 
 
-    
+
           elseif ($password != $password_repeat)
           {
             echo "Password doesnt match";

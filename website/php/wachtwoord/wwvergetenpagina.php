@@ -1,3 +1,37 @@
+<?php
+    require('../connect.php');
+if (isset($_POST['confirm'])) {
+if (isset( $_POST['password'] , $_POST['password_repeat'])){
+
+	$password = $_POST['password'];
+	$password_repeat = $_POST['password_repeat'];
+
+	if($password === $password_repeat){
+		
+          $salted = "ladakwjdawdoi".$password."dsakdalsdawdaw";
+          $hashed = hash('sha512', $salted);
+
+
+		$query= $conn->prepare($sql);
+
+		$query->bindParam(':password', $hashed, PDO::PARAM_STR);
+		$query->execute();
+
+		$success_massage = "password reset successfull!";
+		header('refresh:3; url: ../index.php');
+
+		$sql = 'UPDATE users SET password=$password WHERE email = ';
+		} else {
+			$error_massage= "Password rest failed!";
+		}
+
+	}else {
+		$error_massage= "Password doesn't match";
+	}}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,11 +49,11 @@
 
 		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="new password" required>
 		<br>
-		<input class="formulierwachtwoordvergeten" type="password" name="password" placeholder="repeat password"
+		<input class="formulierwachtwoordvergeten" type="password" name="password_repeat" placeholder="repeat password"
 		 required>
 		<br>
-		<input class="confirmknop " type="submit"  value ="confirm">
-		
+		<input class="confirmknop " id="confirm" name="confirm" type="submit"  value ="confirm">
+
 		</form>
 
 	</div>

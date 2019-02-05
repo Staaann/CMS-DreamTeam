@@ -1,13 +1,6 @@
 <?php
     require('../connect.php');
     		
-    $emailuser = $_GET['email'];
-    		// laat de emails zien
-    		//$emails = $conn->query("SELECT token, email FROM users")->fetchAll(PDO::FETCH_ASSOC);
-			// print de emails maar je doet print_r omdat het een array is en als je echo doet krijg je een error die zegt array to string converstion ofzo!
-			//print_r($emails);
-if (isset($_POST['confirm'])) {
-if (isset( $_POST['password'] , $_POST['password_repeat'])){
 
 	$password = $_POST['password'];
 	$password_repeat = $_POST['password_repeat'];

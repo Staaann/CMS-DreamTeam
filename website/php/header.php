@@ -48,6 +48,7 @@ if (!$_SESSION['username']) {
 		<li><a class="<?php echo ($page_name=='blog-test.php')?'active':'';?>" href="blog-test.php">Blog</a></li>
   		<li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
       <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Contact</a></li>
+      <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="">Protofolio</a></li>
 	</ul>
 	</nav>
 
@@ -63,7 +64,7 @@ if (!$_SESSION['username']) {
             ?>
       </p>
     </div>
-                      <div  style="float: left; margin: -30px 130px ; position: fixed; top: 36px; right:205px; border: 5px;">
+                      <div  style="float: left; margin: -30px 140px ; position: fixed; top: 36px; right:205px; border: 5px;">
 
 
     <img class="ProfilePicHok"  src="<?php echo $image; ?>" height='130' width='130'" >

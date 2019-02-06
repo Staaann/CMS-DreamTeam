@@ -47,8 +47,8 @@ if (!$_SESSION['username']) {
         <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="WebsiteStefan.php">Home</a></li>
 		<li><a class="<?php echo ($page_name=='blog-test.php')?'active':'';?>" href="blog-test.php">Blog</a></li>
   		<li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
-      <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Contact</a></li>
-      <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="">Protofolio</a></li>
+      <li><a class="<?php echo ($page_name=='p.php')?'active':'';?>" href="profile.php">Contact</a></li>
+      <li><a class="<?php echo ($page_name=='p.php')?'active':'';?>" href="">Protofolio</a></li>
 	</ul>
 	</nav>
 

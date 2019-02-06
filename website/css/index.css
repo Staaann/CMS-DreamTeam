@@ -136,14 +136,14 @@ p{
     font-family: sans-serif;
 
 }
-.UserProfileName{
+.username{
   position: absolute;
   position: fixed;
   top: 0;
   width: 100%;
     top: 34px;
     right: 170px;
-    font-size: 95%;
+    font-size: 90%;
     color: white;
     font-family: 'Century Gothic',sans-serif;
     margin: 10;

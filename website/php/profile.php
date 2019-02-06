@@ -121,7 +121,7 @@ while ($row = $query->fetch(PDO::FETCH_ASSOC))
 
 
 <!DOCTYPE html>
-<html>
+<html class="htmlSimon">
   <head>
     <meta charset="utf-8">
     <title>Profile</title>
@@ -165,7 +165,7 @@ Edit profile
         <li> <input class="edit_profile_vakjes" type="email" name="email"  placeholder="Email" value="<?php echo $email; ?>" ></li> <br><br>
       </ul>
         <button  class="submit" type="submit" name="Submit1" >Update</button>
-        <p style="text-align:center;">*changing this will log you out</p>
+        <p style="margin-top: -5px;text-align:center;">*changing this will log you out</p>
       </form>
         </div>
           <!-- End profile erea  --->
@@ -196,14 +196,16 @@ Edit profile
           <div class="edit_profile_body">
             <br>
               <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <p style="text-align:center; padding-bottom:5px;">Select Profile picture:</p><br>
+                    <p style="text-align:center; padding-bottom:3Spx;">Select Profile picture:</p><br>
+                    <div class="CurrentProfile">
+                      <img  src="<?php echo $image; ?>" height='130' width='150'" alt=""" ></p>
+                      </div>
                     <p style="text-align:center;"><input type="file" name="fileToUpload" id="fileToUpload"></p><br>
                   <button  class="submit" type="submit" value="Upload Image" name="submit3" >Update</button>
               </form>
+
           </div>
-            <!-- Endo password erea//////https://www.w3schools.com/php/php_file_upload.asp --->
-            <p>Current profile picture <br>
-            <img  src="<?php echo $image; ?>" height='130' width='150'" alt=""" ></p>
+            <!-- Endo password erea--->
 
 
   </div>

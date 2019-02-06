@@ -274,7 +274,7 @@ color: #262626;
 width: 270px;
 padding: 10px;
 margin: 15px 0;
-`color:  black; 
+`color:  black;
 border-radius: 8px;
 background-color: transparent;   /*rgba(255, 250, 210, 0.1);*/
 
@@ -371,16 +371,16 @@ text-align:   center;
 
 
 
-/*html {
+.htmlSimon {
   background-size: cover;
-    background-color: #4d4d4d;
+    background-color: #D3D3D3;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-}*/
+}
 .wrapper_profile{
   margin: 120px 25% 70px 25%;
 }
@@ -422,6 +422,10 @@ padding: 10px 20px 10px 20px ;
 border-radius: 5px;
 color: #cccccc;
 }
+.CurrentProfile{
+
+  margin-left: 390px;
+}
 /*Edit profile title*/
 .edit_profile_title{
   /*background: grey;*/
@@ -436,7 +440,7 @@ color: white;
 }
 /*body van de hokjes */
 .edit_profile_body{
-min-height:300px;
+
 border:solid#595959;
 border-width:0px 3px 3px 3px;
 border-radius: 0px 0px 5px 5px ;
@@ -489,6 +493,7 @@ padding-right:20px;
 padding-left:20px;
 margin-top: 20px;
 margin-left: 45%;
+margin-bottom: 30px;
 font-size: 17px;
 background-color: rgb(42, 112, 224);
 border-radius: 5px;
@@ -529,7 +534,7 @@ color: white;
 }
 
 .header-stefan{
-  
+
 }
 .tinymce{
   padding: 100px;
@@ -537,7 +542,7 @@ color: white;
   grid-column-start:2;
 }
 .leeg{
-  grid-column-start:1; 
+  grid-column-start:1;
   grid-column-end:3;
   grid-row-start:2;
   grid-row-end: 5;
@@ -547,7 +552,7 @@ color: white;
   border-style: solid;
   border-radius: 5px;
   border-width: 3px;
-  
+
 }
 .cont{
   padding: 200px 10%;

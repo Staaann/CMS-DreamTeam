@@ -1,5 +1,6 @@
 <?php
 require('connect.php');
+require('header.php');
 // Simon // make sure user is logged in needed every page!
 if (!$_SESSION['username']) {
     $loginError = "You are not logged in.";

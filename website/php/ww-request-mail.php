@@ -63,7 +63,7 @@
 			$mail->Subject = 'Change your password';
 
 
-		$mail->msgHTML("Click on this link below to change your password: $url");
+		$mail->msgHTML("Click on this link below to change your password: $url	");
 
 
 

@@ -1,5 +1,13 @@
 <?php
+
 require('connect.php');
+// Simon // make sure user is logged in needed every page!
+if (!$_SESSION['username']) {
+    $loginError = "You are not logged in.";
+    header("location: index.php");
+    exit();
+
+}
 if (isset( $_POST['tekst'])){
 	$tekst = $_POST['tekst'];
 
@@ -30,7 +38,8 @@ if (isset( $_POST['tekst'])){
   <script>
   tinymce.init({
     selector: '#mytextarea',
-    height: 650,
+    height: 600,
+
 
   });
   </script>
@@ -60,13 +69,13 @@ if (isset( $_POST['tekst'])){
 
 
     <div class="footer">
-      <p> Footer </p>
+
     </div>
 
 
 
     <!-- adasd -->
-            <a class="massege" href="viewpages.php">View pages</a>
+
 </div>
 </body>
 </html>

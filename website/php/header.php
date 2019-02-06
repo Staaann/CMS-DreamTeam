@@ -45,10 +45,10 @@ if (!$_SESSION['username']) {
 	<nav id="menu">
     <ul>
         <li><a class="<?php echo ($page_name=='WebsiteStefan.php')?'active':'';?>" href="WebsiteStefan.php">Home</a></li>
-        <li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Portfolio</a></li>
 		<li><a class="<?php echo ($page_name=='blog-test.php')?'active':'';?>" href="blog-test.php">Blog</a></li>
-  		<li><a class="<?php echo ($page_name=='where-to-buy.php')?'active':'';?>" href="#">Contact</a></li>
   		<li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Edit profile</a></li>
+      <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="profile.php">Contact</a></li>
+      <li><a class="<?php echo ($page_name=='profile.php')?'active':'';?>" href="">Protofolio</a></li>
 	</ul>
 	</nav>
 
@@ -60,15 +60,14 @@ if (!$_SESSION['username']) {
         </a>
             <?php
             //simon
-            echo "Welcome ";
             echo  $_SESSION['username'];
             ?>
       </p>
     </div>
-                      <div  style="float: left; margin: 5px 0px 15px 15px; position: fixed; top: 0px; right:360px; border: 5px;border-radius:30px;">
+                      <div  style="float: left; margin: -30px 145px ; position: fixed; top: 36px; right:205px; border: 5px;">
 
 
-    <img class="ProfilePicHok"  src="<?php echo $image; ?>" height='130' width='150' >
+    <img class="ProfilePicHok"  src="<?php echo $image; ?>" height='130' width='130'" >
                       </div>
   </div>
 </div>

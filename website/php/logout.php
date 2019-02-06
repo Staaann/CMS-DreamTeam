@@ -1,4 +1,4 @@
-<?php
+	<?php
 //simon
 require('connect.php');
 

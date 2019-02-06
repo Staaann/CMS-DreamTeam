@@ -78,10 +78,14 @@ if (isset( $_POST['password'] , $_POST['password_repeat'])){
 
   if ($password != $password_repeat)
   {
-    echo "Password doesnt match";
+    echo "<script>
+      alert('Password doesnt match');
+      </script>";
   }
   elseif ($passwordlength <6) {
-echo "password must be longer than 6";
+echo "<script>
+      alert('password must be longer than 6');
+      </script>";
   }
 
 

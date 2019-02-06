@@ -205,3 +205,309 @@ p{
 .ProfilePicHok{
 margin-top: 0;
 }
+
+
+
+/* dit is alleen voor login registreen en wachtwoord vergeten pagina's
+/* code van alle pagina's bij elkaar (j)(s)*/
+html{
+background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: sans-serif;
+background-size: cover;
+height: 100%
+}
+
+/* register code grijze vlakte (s)*/
+.registerplek{
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+background-color: rgba(255,255,255,0.4);
+border-radius:25px;
+padding:20px 50px;
+}
+
+/* login en wachtwoord vergeten code grijze vlakte (j)*/
+.loginplekbg{
+
+  padding: 60px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 25px;
+}
+
+/*login text (j)*/
+h1{
+  font-family: sans-serif;
+  color:  black;
+}
+
+/* naam boven de registratie formulier(s)*/
+.Registernaam{
+padding-top:20px;
+padding-bottom:5px;
+font-size: 18px;
+color: #262626;
+
+}
+
+/* registratie formulier (s)*/
+.knoppen{
+width: 270px;
+padding: 10px;
+margin: 15px 0;
+color:  black; 
+border-radius: 8px;
+background-color: transparent;   /*rgba(255, 250, 210, 0.1);*/
+
+border: 1.4px solid black;
+max-width: 80%;
+}
+
+ /*acc maken knop (register pagina (s)) */
+.reg-submit{
+border:0;
+height: 30px;
+padding-right:20px;
+padding-left:20px;
+margin-top: 20px;
+font-size: 17px;
+background-color: transparent;
+border-radius: 5px;
+border: 1px solid black;
+
+}
+
+/* knoppen hover van de registratie pagina (s)*/
+.submit:hover {
+  background-color: #ADADAD;
+
+}
+
+/* knoppen hover van login en wachtwoord vergeten pagina (j)*/
+.loginknop:hover {
+  background-color: #ADADAD;
+
+}
+
+.reg-massage{
+margin-top: 20px;
+text-decoration: none;
+text-align:   center;
+}
+
+/* knoppen van de login  en wacht woord vergeten(j)*/
+.loginknop{
+
+  width: 110px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid black;
+
+}
+
+/* input van login en wachtwoord vergeten(j) */
+.formulierusername{
+  width: 280px;
+  height: 15px;
+  padding: 10px ;
+  margin: 8px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+/* input van login en wachtwoord vergeten(j) */
+.formulieremail{
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+/* input van login en wachtwoord vergeten(j) */
+.formulierwachtwoord{
+  width: 280px;
+  height: 15px;
+  padding: 10px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+
+}
+
+
+.formulier{
+  margin-top: 20px;
+}
+
+
+
+html {
+  background-size: cover;
+    background-color: #4d4d4d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.wrapper_profile{
+  margin: 70px 25%;
+}
+/*header area*/
+.head_profile  ul {
+  list-style-type: none;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  left: 0.5%;
+}
+
+.head_profile  li {
+  float: left;
+}
+
+.head_profile li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.head_profile  li a:hover {
+  background-color: #BDBDBD;
+
+}
+/*End header area*/
+/*home page link / profile / admin*/
+.welcome_profile{
+font-size: 25px;
+/*background: grey;*/
+background-color: #1a1a1a;
+padding: 10px 20px 10px 20px ;
+border-radius: 5px;
+color: #cccccc;
+}
+/*Edit profile title*/
+.edit_profile_title{
+  /*background: grey;*/
+background-color: #333333;
+padding: 10px 20px 10px 20px ;
+margin-top: 40px;
+border: 2px solid #333333;
+font-style: sans-serif;
+font-size: 25px;
+border-radius:5px 5px 0px 0px;
+color: white;
+}
+/*body van de hokjes */
+.edit_profile_body{
+min-height:300px;
+border:solid#595959;
+border-width:0px 3px 3px 3px;
+border-radius: 0px 0px 5px 5px ;
+background-color: #808080;
+}
+.edit_profile_body_text{
+margin-left: 140px;
+min-width: 100px;
+font-style:times;
+color: #353333;
+font-size: 20px;
+font-weight: bold;
+float: left;
+position: absolute;
+right: 60%;
+
+/*imput velden*/
+}
+.edit_profile_vakjes{
+float:left;
+display:inline;
+text-align: left;
+margin-top: 22px;
+width: 220px;
+padding: 10px;
+margin: 15px 300px;
+border-radius: 3px;
+background-color: rgba(255, 250, 210, 0.1);
+border: 1.4px solid #595959;
+color: white;
+}
+
+input::placeholder {
+  color: rgb(230, 230, 230, 0.8);
+}
+/*einde imput*/
+/*Naast elkaar zetten imput en text*/
+.edit_profile_body ul{
+  list-style-type: none;
+  overflow: auto;
+}
+.edit_profile_body li{
+text-align: center;
+}
+/*De knoppen update*/
+.submit{
+border:0;
+height: 40px;
+padding-right:20px;
+padding-left:20px;
+margin-top: 20px;
+margin-left: 45%;
+font-size: 17px;
+background-color: rgb(42, 112, 224);
+border-radius: 5px;
+border: 1px solid rgb(42, 112, 224) ;
+color: white;
+}
+.ProfilePicture{
+  width: 300px;
+  height: 337px;
+}
+
+
+/*reponseive*/
+@media all and (max-width: 1024px) {
+    .edit_profile_body_text{
+        margin-left: 0px;
+        left: 0;
+    }
+    .edit_profile_body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper_profile{
+      margin: 0;
+    }
+    .edit_profile_vakjes{
+      margin-left: 40%;
+      width: 40%;
+    }
+}
+

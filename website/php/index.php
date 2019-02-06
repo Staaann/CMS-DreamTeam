@@ -58,7 +58,7 @@ background-size: cover;
 height: 100%">
 
 <head>
-		<link rel="stylesheet" type="text/css" href="../css/CMScss.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
 		<title>
 			DreamTeam
 		</title>

@@ -36,7 +36,7 @@ foreach ($pages as $page) {
 <html>
 <head>
 	<title>Vieuw pages</title>
-    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <script>
 	function myFunction1()
 	{

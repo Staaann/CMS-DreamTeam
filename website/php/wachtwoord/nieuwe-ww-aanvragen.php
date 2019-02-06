@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html style="	background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: sans-serif;
+background-size: cover;
+height: 100%">
 <head>
 	<title>new password</title>
-	<link rel="stylesheet" type="text/css" href="cssnieuweww.css">
+	<link rel="stylesheet" type="text/css" href="../.../css/index.css">
 </head>
 <body>
 

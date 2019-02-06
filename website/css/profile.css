@@ -1,6 +1,6 @@
 html {
   background-size: cover;
-    background-color: #4d4d4d;
+    background-color: #D3D3D3;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 .wrapper_profile{
-  margin: 70px 25%;
+  margin: 120px 25% 100px 25%;
 }
 /*header area*/
 .head_profile  ul {
@@ -121,6 +121,10 @@ background-color: rgb(42, 112, 224);
 border-radius: 5px;
 border: 1px solid rgb(42, 112, 224) ;
 color: white;
+}
+.ProfilePicture{
+  width: 300px;
+  height: 337px;
 }
 
 

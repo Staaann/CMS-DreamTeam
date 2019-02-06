@@ -24,32 +24,46 @@
     $username_count = $row["count"];
   }
   if ($username_count AND $email_count > 0) {
-    echo "That username and email is already in use";
+    
+    echo "<script>
+      alert('That username and email is already in use');
+      </script>";
   }
 
   elseif  ($email_count > 0) {
-    echo "That email address is already in use";
+    echo "<script>
+      alert('That email address is already in use');
+      </script>";
   }
 
   elseif ($username_count > 0) {
-    echo "That username is already in use";
+    echo "<script>
+      alert('That username is already in use');
+      </script>";
   }
 
     elseif ($passwordlength <6) {
-  echo "password must be longer than 6";
+  echo "<script>
+      alert('password must be longer than 6');
+      </script>";
     }//einde simon
 
 
-    
+
           elseif ($password != $password_repeat)
           {
-            echo "Password doesnt match";
+            echo "<script>
+      alert('Password doesnt match');
+      </script>";
           }
 
           else{
 
-          if ($password != $password_repeat) {
-            echo "Password doesnt match";
+          if ($password != $password_repeat){
+            echo "<script>
+          }
+      alert('Password doesnt match');
+      </script>";
             }
 
               else{
@@ -85,10 +99,15 @@
 
 
 <!DOCTYPE html>
-<html>
+<html style=" background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: sans-serif;
+background-size: cover;
+height: 100%">
   <head>
     <title>Register</title>
-      <link rel="stylesheet" type="text/css" href="../css/CMScss.css">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body>
@@ -106,9 +125,9 @@
                 <br>
                  <input class="knoppen" type="password" name="password_repeat"  placeholder="Repeat Password"  required>
                 <br>
-                 <button  class="submit" type="submit" name="button" >Sign up</button>
+                 <button  class="reg-submit" type="submit" name="button" >Sign up</button>
                <br>
-                  <p class="massage">already registered? <a class="massage" href="./index.php">login</a> </p>
+                  <p class="reg-massage">already registered? <a class="reg-massage" href="./index.php">login</a> </p>
               </form>
             </div>
           </div>

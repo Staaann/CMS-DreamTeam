@@ -8,26 +8,32 @@ html{
   grid-gap: 0em;
 }
 
-.test{
-  grid-row-start:1;
-  grid-row-end:5;	
+.header-stefan{
+	
 }
-.tekst{
-  grid-column-start: 2;
-  grid-row-start:2;
-  grid-row-end:5;
+.tinymce{
+	padding: 100px;
+	grid-row:2;
+	grid-column-start:2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.leeg{
+	grid-column-start:1; 
+	grid-column-end:3;
+	grid-row-start:2;
+	grid-row-end: 5;
+}
+.page{
+	text-align: center;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 3px;
+	
+}
+.cont{
+	padding: 200px 10%;
+}
+element.style {
+    width: 100%;
+    height: 1000px;
+    display: block;
+}

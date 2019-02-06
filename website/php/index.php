@@ -16,8 +16,9 @@
 
                 //check if the username and password is empty
 				if(empty($username) || empty($password)) {
-				    $messeg = "Username/Password can't be empty";
-				    echo $messeg;
+				    echo "<script>
+				      alert('Username/Password can't be empty');
+				      </script>";
 
 				    //pak de data van de database en vergelijk het
 
@@ -28,17 +29,17 @@
 				    //pak de data
 
 				    if($query->rowCount() >= 1) {
-
-				    var_dump($query);
+				        header("location: WebsiteStefan.php");
 				    
 				    //als het fout is geef de errror
 				    
 				    } else {
-				        $messeg = "Username/Password is wrong";
-				        echo $messeg;
+				       echo "<script>
+					      alert('Username/Password is wrong');
+					      </script>";
 				    }
 				}
-				        header("location: WebsiteStefan.php");
+
 				}
 
 ?>
@@ -49,7 +50,12 @@
 
 
 <!DOCTYPE html>
-<html>
+<html style="	background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: sans-serif;
+background-size: cover;
+height: 100%">
 
 <head>
 		<link rel="stylesheet" type="text/css" href="../css/CMScss.css">

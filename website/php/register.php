@@ -102,7 +102,7 @@
 <html>
   <head>
     <title>Register</title>
-      <link rel="stylesheet" type="text/css" href="../css/CMScss.css">
+      <link rel="stylesheet" type="text/css" href="../css/index.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body>
@@ -120,9 +120,9 @@
                 <br>
                  <input class="knoppen" type="password" name="password_repeat"  placeholder="Repeat Password"  required>
                 <br>
-                 <button  class="submit" type="submit" name="button" >Sign up</button>
+                 <button  class="reg-submit" type="submit" name="button" >Sign up</button>
                <br>
-                  <p class="massage">already registered? <a class="massage" href="./index.php">login</a> </p>
+                  <p class="reg-massage">already registered? <a class="reg-massage" href="./index.php">login</a> </p>
               </form>
             </div>
           </div>

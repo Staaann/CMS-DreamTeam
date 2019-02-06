@@ -60,6 +60,7 @@ if (!$_SESSION['username']) {
         </a>
             <?php
             //simon
+            echo 'Welcome: <br>';
             echo  $_SESSION['username'];
             ?>
       </p>

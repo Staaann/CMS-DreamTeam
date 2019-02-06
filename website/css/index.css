@@ -594,3 +594,9 @@ padding:20px 50px;
   border: 1px solid black;
 
 }
+.UserProfileName{
+  margin-left: 81%;
+  top: 25%;
+  position: absolute;
+  color: #FFFFFF;
+}

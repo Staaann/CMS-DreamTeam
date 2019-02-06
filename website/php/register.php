@@ -24,7 +24,7 @@
     $username_count = $row["count"];
   }
   if ($username_count AND $email_count > 0) {
-    
+
     echo "<script>
       alert('That username and email is already in use');
       </script>";
@@ -99,7 +99,7 @@
 
 
 <!DOCTYPE html>
-<html style=" background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
+<html style="color: #000000; background: linear-gradient(to bottom right, #cc66ff 32%, #00cc99 100%);
 background-size: 100%;
 background-repeat: no-repeat;
 font-family: sans-serif;

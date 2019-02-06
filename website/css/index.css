@@ -274,14 +274,12 @@ color: #262626;
 width: 270px;
 padding: 10px;
 margin: 15px 0;
-`color:  black;
+color:#000000;
 border-radius: 8px;
 background-color: transparent;   /*rgba(255, 250, 210, 0.1);*/
-
 border: 1.4px solid black;
 max-width: 80%;
 }
-
  /*acc maken knop (register pagina (s)) */
 .reg-submit{
 border:0;

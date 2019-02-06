@@ -31,7 +31,7 @@ if (isset( $_POST['tekst'])){
 
 
 <!DOCTYPE html>
-<html>
+<html style=" font-family: 'Century Gothic',sans-serif;">
 <head>
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=5xpfjku55046lllgrobb2m0ru86f3gov7egzz8bru5ozabm4"></script>
 
@@ -43,7 +43,7 @@ if (isset( $_POST['tekst'])){
 
   });
   </script>
-  <link rel="stylesheet" type="text/css" href="../css/grid.css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 
 <body>

@@ -32,7 +32,7 @@ if (!$_SESSION['username']) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html style="	font-family: 'Century Gothic',sans-serif;">
 <head>
 	    <link rel="stylesheet" type="text/css" href="../css/index.css">
 	<title>
